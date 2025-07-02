@@ -1,8 +1,8 @@
 {
-  "name": "tanstack.com",
+  "name": "stzdev.com",
   "private": true,
   "sideEffects": false,
-  "repository": "https://github.com/TanStack/tanstack.com.git",
+  "repository": "https://github.com/steinitz/stzdev.com.git",
   "packageManager": "pnpm@9.4.0",
   "type": "module",
   "scripts": {

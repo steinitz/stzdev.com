@@ -21,8 +21,8 @@ export default defineConfig({
 
     sentryVitePlugin({
       authToken: process.env.SENTRY_AUTH_TOKEN,
-      org: 'tanstack',
-      project: 'tanstack-com',
+      org: 'stzdev',
+      project: 'stzdev-com',
     }),
     contentCollections(),
   ],
