@@ -1,13 +1,9 @@
 import { createCookie } from '@remix-run/node'
 import { redirect } from '@tanstack/react-router'
 
-let secret = process.env.COOKIE_SECRET || 'default'
-if (secret === 'default') {
-  console.warn(
-    '🚨 No COOKIE_SECRET environment variable set, using default. The app is insecure in production.'
-  )
-  secret = 'default-secret'
-}
+import { env } from '~/utils/env'
+
+let secret = env.COOKIE_SECRET
 
 let cookie = createCookie('auth', {
   secrets: [secret],

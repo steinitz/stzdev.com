@@ -218,16 +218,7 @@ function PageComponent() {
             {capitalize(framework)} Example: {slugToTitle(_splat!)}
           </span>
           <div className="flex items-center gap-4 flex-wrap font-normal text-xs">
-            {library.showNetlifyUrl ? (
-              <a
-                href={`https://app.netlify.com/start/deploy?repository=${repoUrl}&create_from_path=${githubExamplePath}`}
-              >
-                <img
-                  src="https://www.netlify.com/img/deploy/button.svg"
-                  alt="Deploy with Netlify"
-                />
-              </a>
-            ) : null}
+
             {library.showVercelUrl ? (
               <a
                 href={`https://vercel.com/new/clone?repository-url=${githubUrl}`}

@@ -38,7 +38,7 @@ export const routerProject = {
   defaultDocs: 'framework/react/overview',
   hideCodesandboxUrl: true,
   showVercelUrl: false,
-  showNetlifyUrl: true,
+
   menu: [
     {
       icon: <BiBookAlt />,

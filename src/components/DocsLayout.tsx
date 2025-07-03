@@ -23,7 +23,6 @@ import type { ConfigSchema, MenuItem } from '~/utils/config'
 import { create } from 'zustand'
 import { Framework, getFrameworkOptions } from '~/libraries'
 import { DocsCalloutQueryGG } from '~/components/DocsCalloutQueryGG'
-import { DocsCalloutBytes } from '~/components/DocsCalloutBytes'
 import { twMerge } from 'tailwind-merge'
 import { partners } from '~/utils/partners'
 import { useThemeStore } from './ThemeToggle'
@@ -361,7 +360,7 @@ export function DocsLayout({
   const prevItem = flatMenu[index - 1]
   const nextItem = flatMenu[index + 1]
 
-  const [showBytes, setShowBytes] = useLocalStorage('showBytes', true)
+
 
   const footerAdKey = useRouterState({ select: (d) => d.location.pathname })
 
@@ -694,21 +693,13 @@ export function DocsLayout({
             <Carbon />
           </div> */}
 
-          {libraryId !== 'query' ? (
-            <div className="p-4 bg-white dark:bg-black/40 border-b border-gray-500/20 shadow-xl divide-y divide-gray-500/20 flex flex-col border-t border-l rounded-l-lg">
-              <DocsCalloutBytes />
-            </div>
-          ) : null}
+
         </div>
       </div>
-      {showBytes ? (
+      {libraryId === 'query' && (
         <div className="w-[300px] max-w-[350px] fixed md:hidden top-1/2 right-2 z-30 -translate-y-1/2 shadow-lg print:hidden">
           <div className="bg-white dark:bg-gray-800 border border-black/10 dark:border-white/10 p-4 md:p-6 rounded-lg">
-            {libraryId === 'query' ? (
-              <DocsCalloutQueryGG />
-            ) : (
-              <DocsCalloutBytes />
-            )}
+            <DocsCalloutQueryGG />
             <button
               className="absolute top-0 right-0 p-2 hover:text-red-500 opacity:30 hover:opacity-100"
               onClick={() => {
@@ -719,33 +710,6 @@ export function DocsLayout({
             </button>
           </div>
         </div>
-      ) : (
-        <button
-          className="right-0 top-1/2 -translate-y-[50px] fixed lg:hidden print:hidden"
-          onClick={() => {
-            setShowBytes(true)
-          }}
-        >
-          <div
-            className="origin-bottom-right -rotate-90 text-xs bg-white dark:bg-gray-800 border border-gray-100
-            hover:bg-rose-600 hover:text-white p-1 px-2 rounded-t-md shadow-md dark:border-0"
-          >
-            {libraryId === 'query' ? (
-              <>
-                <strong>
-                  <span role="img" aria-label="crystal ball">
-                    &#128302;
-                  </span>{' '}
-                  Skip the docs?
-                </strong>
-              </>
-            ) : (
-              <>
-                Subscribe to <strong>Bytes</strong>
-              </>
-            )}
-          </div>
-        </button>
       )}
     </div>
   )

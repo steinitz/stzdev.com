@@ -167,7 +167,7 @@ export default function VersionIndex() {
                       'UPC.ch',
                       'EFI.com',
                       'ReactBricks',
-                      'Nozzle.io',
+                  
                       'Uber',
                     ]
                   )

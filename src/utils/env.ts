@@ -4,11 +4,12 @@ import { z } from 'zod'
 const serverEnvSchema = z.object({
   GITHUB_AUTH_TOKEN: z.string().default('USE_A_REAL_KEY_IN_PRODUCTION'),
   AIRTABLE_API_KEY: z.string().optional(),
+  COOKIE_SECRET: z.string().default('default-secret'),
 })
 
 // Define client schema
 const viteEnvSchema = z.object({
-  VITE_CLERK_PUBLISHABLE_KEY: z.string().optional(),
+
 })
 
 // Validate and parse environment variables

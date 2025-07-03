@@ -432,7 +432,7 @@ async function fetchApiContentsFs(
     'dist',
     'test-results',
     '.output',
-    '.netlify',
+
     '.vercel',
     '.DS_Store',
     '.nitro',

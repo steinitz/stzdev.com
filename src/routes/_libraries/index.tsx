@@ -8,9 +8,7 @@ import discordImage from '~/images/discord-logo-white.svg'
 import { useMutation } from '~/hooks/useMutation'
 import { sample } from '~/utils/utils'
 import { librariesByGroup, librariesGroupNamesMap, Library } from '~/libraries'
-import bytesImage from '~/images/bytes.svg'
-import { partners } from '../../utils/partners'
-import OpenSourceStats from '~/components/OpenSourceStats'
+
 import splashLightImg from '~/images/splash-light.png'
 import splashDarkImg from '~/images/splash-dark.png'
 import { GadFooter } from '~/components/GoogleScripts'
@@ -50,28 +48,12 @@ export const Route = createFileRoute({
   component: Index,
 })
 
-async function bytesSignupServerFn({ email }: { email: string }) {
-  'use server'
 
-  return fetch(`https://bytes.dev/api/bytes-optin-cors`, {
-    method: 'POST',
-    body: JSON.stringify({
-      email,
-      influencer: 'tanstack',
-    }),
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
-  })
-}
 
 const librariesRouteApi = getRouteApi('/_libraries')
 
 function Index() {
-  const bytesSignupMutation = useMutation({
-    fn: bytesSignupServerFn,
-  })
+
 
   const { randomNumber } = Route.useLoaderData()
   const { sponsorsPromise } = librariesRouteApi.useLoaderData()
@@ -137,9 +119,6 @@ function Index() {
                 and more.
               </p>
             </div>
-          </div>
-          <div className="w-fit mx-auto px-4">
-            <OpenSourceStats />
           </div>
         </div>
         <div className="px-4 lg:max-w-screen-lg md:mx-auto">
@@ -287,29 +266,7 @@ function Index() {
           )}
         </div>
 
-        <div className="px-4 lg:max-w-screen-lg md:mx-auto">
-          <h3 className={`text-4xl font-light mb-6`}>Partners</h3>
-          <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2`}>
-            {partners.map((partner) => {
-              return (
-                <a
-                  key={partner.name}
-                  href={partner.href}
-                  target="_blank"
-                  className="bg-white/80 shadow-xl shadow-gray-500/20 rounded-lg dark:border border-gray-500/20 dark:bg-black/40 dark:shadow-none group overflow-hidden grid"
-                  rel="noreferrer"
-                >
-                  <div className="z-0 row-start-1 col-start-1 flex items-center justify-center group-hover:blur-md transition-all duration-200 p-4">
-                    {partner.homepageImg}
-                  </div>
-                  <div className="z-10 row-start-1 col-start-1 max-w-full p-4 text-sm flex flex-col gap-4 items-start justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white/70 dark:bg-gray-800/80">
-                    {partner.content}
-                  </div>
-                </a>
-              )
-            })}
-          </div>
-        </div>
+
 
         <div className={`lg:max-w-screen-lg px-4 mx-auto`}>
           <h3 className={`text-4xl font-light mb-6`}>Courses</h3>
@@ -437,73 +394,8 @@ function Index() {
           </div>
         </div>
         <div className="h-4" />
-        <div className="px-4 mx-auto max-w-screen-lg relative">
-          <div className="rounded-md p-8 bg-white shadow-xl shadow-gray-900/10 md:p-14 dark:bg-black/40">
-            {!bytesSignupMutation.submittedAt ? (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault()
-                  const formData = new FormData(e.currentTarget)
 
-                  bytesSignupMutation.mutate({
-                    email: formData.get('email_address')?.toString() || '',
-                  })
-                }}
-              >
-                <div>
-                  <div className={`relative inline-block`}>
-                    <h3 className={`text-3xl`}>Subscribe to Bytes</h3>
-                    <figure className={`absolute top-0 right-[-48px]`}>
-                      <img
-                        src={bytesImage}
-                        alt="Bytes Logo"
-                        width={40}
-                        height={40}
-                      />
-                    </figure>
-                  </div>
 
-                  <h3 className={`text-lg mt-1`}>
-                    The Best JavaScript Newsletter
-                  </h3>
-                </div>
-                <div className={`grid grid-cols-3 mt-4 gap-2`}>
-                  <input
-                    disabled={bytesSignupMutation.status === 'pending'}
-                    className={`col-span-2 p-3 placeholder-gray-400 text-black bg-gray-200 rounded text-sm outline-none focus:outline-none w-full dark:(text-white bg-gray-700)`}
-                    name="email_address"
-                    placeholder="Your email address"
-                    type="text"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className={`bg-[#ED203D] text-white rounded uppercase font-black`}
-                  >
-                    <span>
-                      {bytesSignupMutation.status === 'pending'
-                        ? 'Loading ...'
-                        : 'Subscribe'}
-                    </span>
-                  </button>
-                </div>
-                {bytesSignupMutation.error ? (
-                  <p
-                    className={`text-sm text-red-500 font-semibold italic mt-2`}
-                  >
-                    Looks like something went wrong. Please try again.
-                  </p>
-                ) : (
-                  <p className={`text-sm opacity-30 font-semibold italic mt-2`}>
-                    Join over 100,000 devs
-                  </p>
-                )}
-              </form>
-            ) : (
-              <p>🎉 Thank you! Please confirm your email</p>
-            )}
-          </div>
-        </div>
         <div className={`h-20`} />
         <Footer />
       </div>

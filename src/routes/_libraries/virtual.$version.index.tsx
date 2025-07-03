@@ -142,7 +142,7 @@ export default function RouteComp() {
                   'Nordstrom',
                   'TicketMaster',
                   'Comcast Business',
-                  'Nozzle.io',
+              
                 ]
               )
               .map((d, i) => (

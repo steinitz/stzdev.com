@@ -100,8 +100,7 @@ export function getPopularComparisons(): z.input<
       packageGroups: [
         {
           packages: [
-            { name: 'ag-grid-community' },
-            { name: 'ag-grid-enterprise' },
+            
           ],
           color: '#29B6F6',
         },

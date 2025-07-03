@@ -13,10 +13,6 @@ const footerLinks = [
     to: 'https://www.youtube.com/user/tannerlinsley',
   },
   {
-    label: 'Nozzle.io - Keyword Rank Tracker',
-    to: 'https://nozzle.io',
-  },
-  {
     label: 'Privacy Policy',
     to: '/privacy',
   },

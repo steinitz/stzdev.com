@@ -142,11 +142,15 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { themeCookie } = Route.useLoaderData()
-
-  React.useEffect(() => {
-    useThemeStore.setState({ mode: themeCookie })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  
+  // Initialize theme state synchronously
+  useThemeStore.setState({ mode: themeCookie })
+  
+  // Set initial theme class
+  const isDark = themeCookie === 'dark' || (themeCookie === 'auto' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  if (typeof document !== 'undefined' && isDark) {
+    document.documentElement.classList.add('dark')
+  }
 
   const matches = useMatches()
 
@@ -172,17 +176,23 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 
   const showDevtools = canShowLoading && isRouterPage
 
-  const themeClass = themeCookie === 'dark' ? 'dark' : ''
+  const [themeClass, setThemeClass] = React.useState('')
+
+  React.useEffect(() => {
+    const isDark = themeCookie === 'dark' || (themeCookie === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    setThemeClass(isDark ? 'dark' : '')
+  }, [themeCookie])
 
   return (
-    <html lang="en" className={themeClass}>
+    <html lang="en">
       <head>
-        {/* If the theme is set to auto, inject a tiny script to set the proper class on html based on the user preference */}
-        {themeCookie === 'auto' ? (
-          <ScriptOnce
-            children={`window.matchMedia('(prefers-color-scheme: dark)').matches ? document.documentElement.classList.add('dark') : null`}
-          />
-        ) : null}
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            var theme = document.cookie.match(/theme=([^;]+)/)?.[1] || 'auto';
+            var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            if (isDark) document.documentElement.classList.add('dark');
+          })();
+        `}} />
         <HeadContent />
         {matches.find((d) => d.staticData?.baseParent) ? (
           <base target="_parent" />

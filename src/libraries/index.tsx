@@ -81,7 +81,7 @@ export type Library = {
   hideCodesandboxUrl?: true
   hideStackblitzUrl?: true
   showVercelUrl?: boolean
-  showNetlifyUrl?: boolean
+
   menu: LibraryMenuItem[]
   featureHighlights?: {
     title: string

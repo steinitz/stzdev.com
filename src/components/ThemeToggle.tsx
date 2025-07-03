@@ -39,7 +39,8 @@ export const getThemeCookie = createServerFn().handler(() => {
 })
 
 export const useThemeStore = create<ThemeStore>((set, get) => ({
-  mode: 'auto',
+  // Initialize mode from cookie during store creation
+  mode: typeof document !== 'undefined' ? (themeModeSchema.catch('auto').parse(document.cookie.match(/theme=([^;]+)/)?.[1] ?? 'null') || 'auto') : 'auto',
   prefers: (() => {
     if (typeof document !== 'undefined') {
       return window.matchMedia('(prefers-color-scheme: dark)').matches

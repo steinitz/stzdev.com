@@ -83,13 +83,13 @@ export default function VersionIndex() {
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
-            to="./docs/framework/react/quick-start#impatient"
+            to="/$libraryId/$version/docs/framework/react/quick-start#impatient"
             className={`py-2 px-4 bg-transparent text-cyan-600 dark:text-cyan-400 border-2 border-cyan-500 dark:border-cyan-600 rounded uppercase font-extrabold`}
           >
             Try it in 60 seconds
           </Link>
           <Link
-            to="./docs/framework/react/overview"
+            to="/$libraryId/$version/docs/framework/react/overview"
             className={`py-2 px-4 bg-cyan-500 dark:bg-cyan-600 rounded text-white uppercase font-extrabold flex items-center`}
           >
             Get Started
@@ -113,13 +113,13 @@ export default function VersionIndex() {
         </div>
         <div className="grid items-center gap-2 justify-center grid-cols-2 w-[600px] max-w-full mx-auto">
           <Link
-            to="/start/latest/docs/framework/react/examples/start-basic"
+            to="/$libraryId/$version/docs/framework/react/examples/start-basic"
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-900 rounded text-white uppercase font-extrabold`}
           >
             <VscPreview /> See an Example
           </Link>
           <Link
-            to="/start/latest/docs/framework/react/overview"
+            to="/$libraryId/$version/docs/framework/react/overview"
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-800 rounded text-white uppercase font-extrabold`}
           >
             <FaBook /> Try the BETA
@@ -283,7 +283,7 @@ export default function VersionIndex() {
                   'UPC.ch',
                   'EFI.com',
                   'ReactBricks',
-                  'Nozzle.io',
+              
                   'Uber',
                 ]
               )
@@ -438,7 +438,7 @@ export default function VersionIndex() {
         </div>
         <div>
           <Link
-            to="/start/latest/docs/framework/react/overview"
+            to="/$libraryId/$version/docs/framework/react/overview"
             className={`inline-block py-2 px-4 bg-cyan-500 rounded text-white uppercase font-extrabold`}
           >
             Get Started!

@@ -155,7 +155,7 @@ export default function TableVersionIndex() {
                   'Nordstrom',
                   'TicketMaster',
                   'Comcast Business',
-                  'Nozzle.io',
+              
                 ]
               )
               .map((d, i) => (
