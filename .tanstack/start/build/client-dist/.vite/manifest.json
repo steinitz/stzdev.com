@@ -1,0 +1,1278 @@
+{
+  "../../../../../../../../../../~start/default-client-entry.tsx": {
+    "file": "assets/main-DjDY-E1F.js",
+    "name": "main",
+    "src": "../../../../../../../../../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/.pnpm/@tanstack+router-devtools-core@1.121.33_@tanstack+router-core@1.121.33_csstype@3.1.3_solid-js@1.9.6_tiny-invariant@1.3.3/node_modules/@tanstack/router-devtools-core/dist/esm/FloatingTanStackRouterDevtools.js",
+      "src/routes/sponsors-embed.tsx?tsr-split=component",
+      "src/routes/login.tsx?tsr-split=component",
+      "src/routes/dashboard.tsx?tsr-split=component",
+      "src/routes/_libraries/route.tsx?tsr-split=component",
+      "src/routes/_libraries/index.tsx?tsr-split=component",
+      "src/routes/_libraries/support.tsx?tsr-split=component",
+      "src/routes/_libraries/learn.tsx?tsr-split=component",
+      "src/routes/_libraries/dedicated-support.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.tsx?tsr-split=component",
+      "src/routes/stats/npm/index.tsx?tsr-split=component",
+      "src/routes/_libraries/blog.index.tsx?tsr-split=component",
+      "src/routes/_libraries/blog.index.tsx?tsr-split=notFoundComponent",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/wasm.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/andromeeda.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/aurora-x.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/ayu-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-frappe.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-latte.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-macchiato.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-mocha.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dark-plus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula-soft.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-default.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-dimmed.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light-default.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/houston.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/laserwave.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/light-plus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-darker.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-lighter.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-ocean.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-palenight.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-light.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/monokai.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/night-owl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/nord.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-dark-pro.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-light.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/poimandres.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/red.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-dawn.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-moon.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-ochin.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/snazzy-light.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-light.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/synthwave-84.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/tokyo-night.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vesper.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-black.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-dark.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-light.mjs",
+      "_angular-html-KnlkXMI2.js",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/angular-ts.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/astro.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/blade.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/cpp.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/glsl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/haml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/handlebars.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/http.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/imba.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jinja.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jison.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json5.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonc.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/julia.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/lua.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/marko.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdc.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/php.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/postcss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/python.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/r.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/regexp.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/ruby.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/svelte.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/toml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue-html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wasm.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wgsl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs",
+      "src/routes/_libraries/blog.$.tsx?tsr-split=notFoundComponent",
+      "src/routes/$libraryId/$version.docs.tsx?tsr-split=component",
+      "src/routes/_libraries/router.$version.index.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.contributors.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.$.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.framework.index.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.framework.$framework.index.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.framework.$framework.$.tsx?tsr-split=component",
+      "src/routes/$libraryId/$version.docs.framework.$framework.examples.$.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/og-A4BVqboc.png",
+      "assets/tannerlinsley-DhO2WGbB.jpeg",
+      "assets/kevinvancott-CbbRAdWl.jpeg",
+      "assets/dominikdorfmeister-D2CJ0Vdi.jpg",
+      "assets/corbincrutchley-Cp9J_kxj.jpeg",
+      "assets/query-header-course-D2YLhFWf.svg",
+      "assets/query-corner-top-left-UnQmfE7y.svg",
+      "assets/query-corner-fish-bottom-right-Dbfu2aLx.svg",
+      "assets/app-x9EhbMK3.css",
+      "assets/carbon-DMWd1FYf.css"
+    ]
+  },
+  "/Users/steinitz/Documents/Projects/Web/STZDevSite/React/TanstackCom/stzdev/stzdev.com/src/styles/app.css": {
+    "file": "assets/app-x9EhbMK3.css",
+    "src": "/Users/steinitz/Documents/Projects/Web/STZDevSite/React/TanstackCom/stzdev/stzdev.com/src/styles/app.css"
+  },
+  "/Users/steinitz/Documents/Projects/Web/STZDevSite/React/TanstackCom/stzdev/stzdev.com/src/styles/carbon.css": {
+    "file": "assets/carbon-DMWd1FYf.css",
+    "src": "/Users/steinitz/Documents/Projects/Web/STZDevSite/React/TanstackCom/stzdev/stzdev.com/src/styles/carbon.css"
+  },
+  "_MaintainerCard-1lc2hr7e.js": {
+    "file": "assets/MaintainerCard-1lc2hr7e.js",
+    "name": "MaintainerCard",
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "_SearchButton-BkuVoloK.js": {
+    "file": "assets/SearchButton-BkuVoloK.js",
+    "name": "SearchButton",
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "_angular-html-KnlkXMI2.js": {
+    "file": "assets/angular-html-KnlkXMI2.js",
+    "name": "angular-html",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs"
+    ]
+  },
+  "_logo-color-100w-XNkndZ-z.js": {
+    "file": "assets/logo-color-100w-XNkndZ-z.js",
+    "name": "logo-color-100w",
+    "assets": [
+      "assets/logo-color-100w-br5_Ikqp.png"
+    ]
+  },
+  "_useMutation-u-iv-3Z8.js": {
+    "file": "assets/useMutation-u-iv-3Z8.js",
+    "name": "useMutation",
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "_useQuery-Dc8rJVFX.js": {
+    "file": "assets/useQuery-Dc8rJVFX.js",
+    "name": "useQuery",
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "node_modules/.pnpm/@tanstack+router-devtools-core@1.121.33_@tanstack+router-core@1.121.33_csstype@3.1.3_solid-js@1.9.6_tiny-invariant@1.3.3/node_modules/@tanstack/router-devtools-core/dist/esm/FloatingTanStackRouterDevtools.js": {
+    "file": "assets/FloatingTanStackRouterDevtools-6_J4wWAY.js",
+    "name": "FloatingTanStackRouterDevtools",
+    "src": "node_modules/.pnpm/@tanstack+router-devtools-core@1.121.33_@tanstack+router-core@1.121.33_csstype@3.1.3_solid-js@1.9.6_tiny-invariant@1.3.3/node_modules/@tanstack/router-devtools-core/dist/esm/FloatingTanStackRouterDevtools.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/angular-ts.mjs": {
+    "file": "assets/angular-ts-DviZzb-6.js",
+    "name": "angular-ts",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/angular-ts.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_angular-html-KnlkXMI2.js",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/astro.mjs": {
+    "file": "assets/astro-U9VgAVQT.js",
+    "name": "astro",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/astro.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/postcss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/blade.mjs": {
+    "file": "assets/blade-HiqCVk8k.js",
+    "name": "blade",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/blade.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs": {
+    "file": "assets/c-RCJZWN-0.js",
+    "name": "c",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs": {
+    "file": "assets/coffee-B4DZ7swD.js",
+    "name": "coffee",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/cpp.mjs": {
+    "file": "assets/cpp-Cs2InjzH.js",
+    "name": "cpp",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/cpp.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/regexp.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/glsl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs": {
+    "file": "assets/css-CbYhyuC0.js",
+    "name": "css",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/glsl.mjs": {
+    "file": "assets/glsl-DNg5e6rY.js",
+    "name": "glsl",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/glsl.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs": {
+    "file": "assets/graphql-Cac5VMXA.js",
+    "name": "graphql",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/haml.mjs": {
+    "file": "assets/haml-BdfK1T70.js",
+    "name": "haml",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/haml.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/ruby.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/lua.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/handlebars.mjs": {
+    "file": "assets/handlebars-xynVXfnx.js",
+    "name": "handlebars",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/handlebars.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs": {
+    "file": "assets/html-derivative-CvQVKW9i.js",
+    "name": "html-derivative",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs": {
+    "file": "assets/html-CqhC7HHo.js",
+    "name": "html",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/http.mjs": {
+    "file": "assets/http-mWhOz2-8.js",
+    "name": "http",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/http.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/imba.mjs": {
+    "file": "assets/imba-BXg-Svbq.js",
+    "name": "imba",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/imba.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs": {
+    "file": "assets/java-ClXEvkw9.js",
+    "name": "java",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs": {
+    "file": "assets/javascript-Dch3xQiY.js",
+    "name": "javascript",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jinja.mjs": {
+    "file": "assets/jinja-DwshyRC8.js",
+    "name": "jinja",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jinja.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jison.mjs": {
+    "file": "assets/jison-5Ig0VrXv.js",
+    "name": "jison",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jison.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs": {
+    "file": "assets/json-CupVZNk8.js",
+    "name": "json",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json5.mjs": {
+    "file": "assets/json5-Bh8mriwU.js",
+    "name": "json5",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json5.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonc.mjs": {
+    "file": "assets/jsonc-DYI1rfmx.js",
+    "name": "jsonc",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonc.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonl.mjs": {
+    "file": "assets/jsonl-BUpeXbsf.js",
+    "name": "jsonl",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonl.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs": {
+    "file": "assets/jsx-CsyrCbsw.js",
+    "name": "jsx",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/julia.mjs": {
+    "file": "assets/julia-Cf9cjBMk.js",
+    "name": "julia",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/julia.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/cpp.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/python.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/r.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/regexp.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/glsl.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs": {
+    "file": "assets/less-Du6_OKDb.js",
+    "name": "less",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/lua.mjs": {
+    "file": "assets/lua-BPmF2VOm.js",
+    "name": "lua",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/lua.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs": {
+    "file": "assets/markdown-BnyYJeap.js",
+    "name": "markdown",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/marko.mjs": {
+    "file": "assets/marko-DTTVzMRa.js",
+    "name": "marko",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/marko.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdc.mjs": {
+    "file": "assets/mdc-D8RUULOf.js",
+    "name": "mdc",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdc.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdx.mjs": {
+    "file": "assets/mdx-CBPJd_fO.js",
+    "name": "mdx",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/mdx.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/php.mjs": {
+    "file": "assets/php-DdJTc9Za.js",
+    "name": "php",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/php.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/postcss.mjs": {
+    "file": "assets/postcss-DXT9h7v2.js",
+    "name": "postcss",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/postcss.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs": {
+    "file": "assets/pug-BmZh5kCX.js",
+    "name": "pug",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/python.mjs": {
+    "file": "assets/python-DwuVtWc2.js",
+    "name": "python",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/python.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/r.mjs": {
+    "file": "assets/r-BXfENWL6.js",
+    "name": "r",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/r.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/regexp.mjs": {
+    "file": "assets/regexp-C_ZPRiAj.js",
+    "name": "regexp",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/regexp.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/ruby.mjs": {
+    "file": "assets/ruby-CPHW1Myo.js",
+    "name": "ruby",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/ruby.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/c.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/lua.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs": {
+    "file": "assets/sass-CMDmr8et.js",
+    "name": "sass",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs": {
+    "file": "assets/scss-DqznleHU.js",
+    "name": "scss",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs": {
+    "file": "assets/shellscript-BZfs-ost.js",
+    "name": "shellscript",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/shellscript.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs": {
+    "file": "assets/sql-DbK06e1c.js",
+    "name": "sql",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sql.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs": {
+    "file": "assets/stylus-DSrLtGYv.js",
+    "name": "stylus",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/svelte.mjs": {
+    "file": "assets/svelte-DLO-wfv1.js",
+    "name": "svelte",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/svelte.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/postcss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/toml.mjs": {
+    "file": "assets/toml-BT9ZzGyQ.js",
+    "name": "toml",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/toml.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs": {
+    "file": "assets/tsx-BlxWTfDV.js",
+    "name": "tsx",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs": {
+    "file": "assets/typescript-DC8MraHL.js",
+    "name": "typescript",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue-html.mjs": {
+    "file": "assets/vue-html-Ge7f6POt.js",
+    "name": "vue-html",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue-html.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonc.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json5.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/toml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue.mjs": {
+    "file": "assets/vue-DY-5B19-.js",
+    "name": "vue",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/vue.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/markdown.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/pug.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/stylus.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/sass.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/css.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/scss.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/less.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/javascript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/typescript.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/tsx.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/coffee.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/jsonc.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/json5.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/toml.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/graphql.mjs",
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/html-derivative.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wasm.mjs": {
+    "file": "assets/wasm-Cicx_DS6.js",
+    "name": "wasm",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wasm.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wgsl.mjs": {
+    "file": "assets/wgsl-BZz1Hhek.js",
+    "name": "wgsl",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/wgsl.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs": {
+    "file": "assets/xml-KWQaRJyt.js",
+    "name": "xml",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/xml.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/java.mjs"
+    ]
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs": {
+    "file": "assets/yaml-DK4oFTHQ.js",
+    "name": "yaml",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/langs/yaml.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/andromeeda.mjs": {
+    "file": "assets/andromeeda-YxQm0tCS.js",
+    "name": "andromeeda",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/andromeeda.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/aurora-x.mjs": {
+    "file": "assets/aurora-x-BaWyeHV_.js",
+    "name": "aurora-x",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/aurora-x.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/ayu-dark.mjs": {
+    "file": "assets/ayu-dark-Bn5gmY5k.js",
+    "name": "ayu-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/ayu-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-frappe.mjs": {
+    "file": "assets/catppuccin-frappe-CSPeAESR.js",
+    "name": "catppuccin-frappe",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-frappe.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-latte.mjs": {
+    "file": "assets/catppuccin-latte-BYdKNJ10.js",
+    "name": "catppuccin-latte",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-latte.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-macchiato.mjs": {
+    "file": "assets/catppuccin-macchiato-DVLwECkk.js",
+    "name": "catppuccin-macchiato",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-macchiato.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-mocha.mjs": {
+    "file": "assets/catppuccin-mocha-CEfge3mM.js",
+    "name": "catppuccin-mocha",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/catppuccin-mocha.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dark-plus.mjs": {
+    "file": "assets/dark-plus-KEYLhlmT.js",
+    "name": "dark-plus",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dark-plus.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula-soft.mjs": {
+    "file": "assets/dracula-soft-9B1nZgL-.js",
+    "name": "dracula-soft",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula-soft.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula.mjs": {
+    "file": "assets/dracula-DGO8GyiP.js",
+    "name": "dracula",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/dracula.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-default.mjs": {
+    "file": "assets/github-dark-default-BXF7Vm5l.js",
+    "name": "github-dark-default",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-default.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-dimmed.mjs": {
+    "file": "assets/github-dark-dimmed-CRDKj6ck.js",
+    "name": "github-dark-dimmed",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark-dimmed.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark.mjs": {
+    "file": "assets/github-dark-CzPA46E-.js",
+    "name": "github-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light-default.mjs": {
+    "file": "assets/github-light-default-UREJT2Bw.js",
+    "name": "github-light-default",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light-default.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light.mjs": {
+    "file": "assets/github-light-CRlnGVMD.js",
+    "name": "github-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/github-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/houston.mjs": {
+    "file": "assets/houston-CZZ6oYdA.js",
+    "name": "houston",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/houston.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/laserwave.mjs": {
+    "file": "assets/laserwave-cW9vKj3g.js",
+    "name": "laserwave",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/laserwave.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/light-plus.mjs": {
+    "file": "assets/light-plus-BsvsQ1iS.js",
+    "name": "light-plus",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/light-plus.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-darker.mjs": {
+    "file": "assets/material-theme-darker-CO7HdiM_.js",
+    "name": "material-theme-darker",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-darker.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-lighter.mjs": {
+    "file": "assets/material-theme-lighter-qxoleWdb.js",
+    "name": "material-theme-lighter",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-lighter.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-ocean.mjs": {
+    "file": "assets/material-theme-ocean-ChH25C4w.js",
+    "name": "material-theme-ocean",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-ocean.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-palenight.mjs": {
+    "file": "assets/material-theme-palenight-DOqtC9FP.js",
+    "name": "material-theme-palenight",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme-palenight.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme.mjs": {
+    "file": "assets/material-theme-CgwOUXSn.js",
+    "name": "material-theme",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/material-theme.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-dark.mjs": {
+    "file": "assets/min-dark-iSbrOpM4.js",
+    "name": "min-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-light.mjs": {
+    "file": "assets/min-light-BITGhEdf.js",
+    "name": "min-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/min-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/monokai.mjs": {
+    "file": "assets/monokai-sMI-pExk.js",
+    "name": "monokai",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/monokai.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/night-owl.mjs": {
+    "file": "assets/night-owl-BeocmOPF.js",
+    "name": "night-owl",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/night-owl.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/nord.mjs": {
+    "file": "assets/nord-CsyjKwr8.js",
+    "name": "nord",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/nord.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-dark-pro.mjs": {
+    "file": "assets/one-dark-pro-BTtaZsq5.js",
+    "name": "one-dark-pro",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-dark-pro.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-light.mjs": {
+    "file": "assets/one-light-alpzPJ78.js",
+    "name": "one-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/one-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/poimandres.mjs": {
+    "file": "assets/poimandres-Cda-MJFk.js",
+    "name": "poimandres",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/poimandres.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/red.mjs": {
+    "file": "assets/red-jaXbsbtS.js",
+    "name": "red",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/red.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-dawn.mjs": {
+    "file": "assets/rose-pine-dawn-Bj5xdiaE.js",
+    "name": "rose-pine-dawn",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-dawn.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-moon.mjs": {
+    "file": "assets/rose-pine-moon-CdedUr_-.js",
+    "name": "rose-pine-moon",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine-moon.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine.mjs": {
+    "file": "assets/rose-pine-CX_FIdg1.js",
+    "name": "rose-pine",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/rose-pine.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-dark.mjs": {
+    "file": "assets/slack-dark-C7oZ9nno.js",
+    "name": "slack-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-ochin.mjs": {
+    "file": "assets/slack-ochin-hXH8Gyq8.js",
+    "name": "slack-ochin",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/slack-ochin.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/snazzy-light.mjs": {
+    "file": "assets/snazzy-light-CA9nliXM.js",
+    "name": "snazzy-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/snazzy-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-dark.mjs": {
+    "file": "assets/solarized-dark-C86elO-m.js",
+    "name": "solarized-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-light.mjs": {
+    "file": "assets/solarized-light-xPNGhBYe.js",
+    "name": "solarized-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/solarized-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/synthwave-84.mjs": {
+    "file": "assets/synthwave-84-BBDuFDsq.js",
+    "name": "synthwave-84",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/synthwave-84.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/tokyo-night.mjs": {
+    "file": "assets/tokyo-night-eJfcURhx.js",
+    "name": "tokyo-night",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/tokyo-night.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vesper.mjs": {
+    "file": "assets/vesper-BSB_bK09.js",
+    "name": "vesper",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vesper.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-black.mjs": {
+    "file": "assets/vitesse-black-B3g-KkBK.js",
+    "name": "vitesse-black",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-black.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-dark.mjs": {
+    "file": "assets/vitesse-dark-Bxkoe-BC.js",
+    "name": "vitesse-dark",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-dark.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-light.mjs": {
+    "file": "assets/vitesse-light-Br6ll-O0.js",
+    "name": "vitesse-light",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/themes/vitesse-light.mjs",
+    "isDynamicEntry": true
+  },
+  "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/wasm.mjs": {
+    "file": "assets/wasm-CsTmP73Z.js",
+    "name": "wasm",
+    "src": "node_modules/.pnpm/shiki@1.10.3/node_modules/shiki/dist/wasm.mjs",
+    "isDynamicEntry": true
+  },
+  "src/images/file-icons/svelte.svg": {
+    "file": "assets/svelte-DI4JToV3.svg",
+    "src": "src/images/file-icons/svelte.svg"
+  },
+  "src/images/logo-color-100w.png": {
+    "file": "assets/logo-color-100w-br5_Ikqp.png",
+    "src": "src/images/logo-color-100w.png"
+  },
+  "src/images/og.png": {
+    "file": "assets/og-A4BVqboc.png",
+    "src": "src/images/og.png"
+  },
+  "src/images/people/corbincrutchley.jpeg": {
+    "file": "assets/corbincrutchley-Cp9J_kxj.jpeg",
+    "src": "src/images/people/corbincrutchley.jpeg"
+  },
+  "src/images/people/dominikdorfmeister.jpg": {
+    "file": "assets/dominikdorfmeister-D2CJ0Vdi.jpg",
+    "src": "src/images/people/dominikdorfmeister.jpg"
+  },
+  "src/images/people/kevinvancott.jpeg": {
+    "file": "assets/kevinvancott-CbbRAdWl.jpeg",
+    "src": "src/images/people/kevinvancott.jpeg"
+  },
+  "src/images/people/tannerlinsley.jpeg": {
+    "file": "assets/tannerlinsley-DhO2WGbB.jpeg",
+    "src": "src/images/people/tannerlinsley.jpeg"
+  },
+  "src/images/query-corner-fish-bottom-right.svg": {
+    "file": "assets/query-corner-fish-bottom-right-Dbfu2aLx.svg",
+    "src": "src/images/query-corner-fish-bottom-right.svg"
+  },
+  "src/images/query-corner-top-left.svg": {
+    "file": "assets/query-corner-top-left-UnQmfE7y.svg",
+    "src": "src/images/query-corner-top-left.svg"
+  },
+  "src/images/query-header-course.svg": {
+    "file": "assets/query-header-course-D2YLhFWf.svg",
+    "src": "src/images/query-header-course.svg"
+  },
+  "src/images/splash-dark.png": {
+    "file": "assets/splash-dark-8nwlc0Nt.png",
+    "src": "src/images/splash-dark.png"
+  },
+  "src/images/splash-light.png": {
+    "file": "assets/splash-light-CHqMsyq8.png",
+    "src": "src/images/splash-light.png"
+  },
+  "src/routes/$libraryId/$version.docs.$.tsx?tsr-split=component": {
+    "file": "assets/_version.docs._-ByWS3ItP.js",
+    "name": "_version.docs._",
+    "src": "src/routes/$libraryId/$version.docs.$.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.contributors.tsx?tsr-split=component": {
+    "file": "assets/_version.docs.contributors-BPL-zpfz.js",
+    "name": "_version.docs.contributors",
+    "src": "src/routes/$libraryId/$version.docs.contributors.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_MaintainerCard-1lc2hr7e.js"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.framework.$framework.$.tsx?tsr-split=component": {
+    "file": "assets/_version.docs.framework._framework._-DVgB62GA.js",
+    "name": "_version.docs.framework._framework._",
+    "src": "src/routes/$libraryId/$version.docs.framework.$framework.$.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.framework.$framework.examples.$.tsx?tsr-split=component": {
+    "file": "assets/_version.docs.framework._framework.examples._-RNHjxnWS.js",
+    "name": "_version.docs.framework._framework.examples._",
+    "src": "src/routes/$libraryId/$version.docs.framework.$framework.examples.$.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_useQuery-Dc8rJVFX.js"
+    ],
+    "assets": [
+      "assets/svelte-DI4JToV3.svg"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.framework.$framework.index.tsx?tsr-split=component": {
+    "file": "assets/_version.docs.framework._framework.index-CB7bTgPl.js",
+    "name": "_version.docs.framework._framework.index",
+    "src": "src/routes/$libraryId/$version.docs.framework.$framework.index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.framework.index.tsx?tsr-split=component": {
+    "file": "assets/_version.docs.framework.index-BAbKz6oD.js",
+    "name": "_version.docs.framework.index",
+    "src": "src/routes/$libraryId/$version.docs.framework.index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/$libraryId/$version.docs.tsx?tsr-split=component": {
+    "file": "assets/_version.docs-CGhRsQqK.js",
+    "name": "_version.docs",
+    "src": "src/routes/$libraryId/$version.docs.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_SearchButton-BkuVoloK.js"
+    ]
+  },
+  "src/routes/$libraryId/$version.tsx?tsr-split=component": {
+    "file": "assets/_version-BwfoviTM.js",
+    "name": "_version",
+    "src": "src/routes/$libraryId/$version.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/blog.$.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/blog._-DHq7Kc9z.js",
+    "name": "blog._",
+    "src": "src/routes/_libraries/blog.$.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/blog.index.tsx?tsr-split=component": {
+    "file": "assets/blog.index-BWiybLJf.js",
+    "name": "blog.index",
+    "src": "src/routes/_libraries/blog.index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/blog.index.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/blog.index-BFk-KVVu.js",
+    "name": "blog.index",
+    "src": "src/routes/_libraries/blog.index.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/dedicated-support.tsx?tsr-split=component": {
+    "file": "assets/dedicated-support-BgDV7CoC.js",
+    "name": "dedicated-support",
+    "src": "src/routes/_libraries/dedicated-support.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/index.tsx?tsr-split=component": {
+    "file": "assets/index-C8vuqAb7.js",
+    "name": "index",
+    "src": "src/routes/_libraries/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_MaintainerCard-1lc2hr7e.js"
+    ],
+    "assets": [
+      "assets/splash-light-CHqMsyq8.png",
+      "assets/splash-dark-8nwlc0Nt.png"
+    ]
+  },
+  "src/routes/_libraries/learn.tsx?tsr-split=component": {
+    "file": "assets/learn-X8Z51Gtt.js",
+    "name": "learn",
+    "src": "src/routes/_libraries/learn.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/route.tsx?tsr-split=component": {
+    "file": "assets/route-DPST0AkS.js",
+    "name": "route",
+    "src": "src/routes/_libraries/route.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_logo-color-100w-XNkndZ-z.js",
+      "_SearchButton-BkuVoloK.js"
+    ]
+  },
+  "src/routes/_libraries/router.$version.index.tsx?tsr-split=component": {
+    "file": "assets/router._version.index-BELe1SMc.js",
+    "name": "router._version.index",
+    "src": "src/routes/_libraries/router.$version.index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/_libraries/support.tsx?tsr-split=component": {
+    "file": "assets/support-CwjQYZ94.js",
+    "name": "support",
+    "src": "src/routes/_libraries/support.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/dashboard.tsx?tsr-split=component": {
+    "file": "assets/dashboard-DrHREwJs.js",
+    "name": "dashboard",
+    "src": "src/routes/dashboard.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_useMutation-u-iv-3Z8.js"
+    ]
+  },
+  "src/routes/login.tsx?tsr-split=component": {
+    "file": "assets/login-BTMq9Zok.js",
+    "name": "login",
+    "src": "src/routes/login.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_useMutation-u-iv-3Z8.js"
+    ]
+  },
+  "src/routes/sponsors-embed.tsx?tsr-split=component": {
+    "file": "assets/sponsors-embed-2yEaOKOp.js",
+    "name": "sponsors-embed",
+    "src": "src/routes/sponsors-embed.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/stats/npm/index.tsx?tsr-split=component": {
+    "file": "assets/index-CWdnR3R3.js",
+    "name": "index",
+    "src": "src/routes/stats/npm/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../../../../../../../../../~start/default-client-entry.tsx",
+      "_useQuery-Dc8rJVFX.js",
+      "_logo-color-100w-XNkndZ-z.js"
+    ]
+  }
+}

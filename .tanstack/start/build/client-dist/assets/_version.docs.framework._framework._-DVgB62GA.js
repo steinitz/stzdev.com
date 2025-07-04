@@ -1,0 +1,1 @@
+import{bc as t,X as l,b2 as b,j as e,b6 as m,b9 as p}from"./main-DjDY-E1F.js";const h=function(){const{title:n,content:s,filePath:r}=t.useLoaderData(),{version:c,libraryId:a}=t.useParams(),o=l(a),i=b(o,c);return e.jsx(m,{children:e.jsx(p,{title:n,content:s,repo:o.repo,branch:i,filePath:r,colorFrom:o.colorFrom,colorTo:o.colorTo,shouldRenderToc:!0},r)})};export{h as component};
