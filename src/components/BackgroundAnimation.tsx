@@ -194,13 +194,13 @@ export function BackgroundAnimation() {
   return (
     <div
       className={twMerge(
-        'fixed inset-0 z-0 opacity-20 pointer-events-none',
+        'fixed inset-0 z-0 opacity-5 pointer-events-none',
         'transition-opacity duration-[2s] ease-linear',
         '[&+*]:relative',
         mounted
           ? isHomePage
-            ? 'opacity-10 dark:opacity-20'
-            : 'opacity-10 dark:opacity-20'
+            ? 'opacity-5 dark:opacity-5'
+            : 'opacity-5 dark:opacity-5'
           : 'opacity-0'
       )}
     >

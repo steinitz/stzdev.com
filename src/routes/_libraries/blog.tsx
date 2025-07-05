@@ -4,8 +4,8 @@ import { seo } from '~/utils/seo'
 export const Route = createFileRoute({
   head: () => ({
     meta: seo({
-      title: 'Blog | TanStack',
-      description: 'The latest news and blog posts from TanStack!',
+      title: 'Blog | STZ Dev',
+  description: 'The latest news and blog posts from STZ Dev!',
     }),
   }),
 })

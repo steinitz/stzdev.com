@@ -2,16 +2,9 @@ import { Link } from '@tanstack/react-router'
 
 const footerLinks = [
   { label: 'Blog', to: '/blog' },
-  { label: '@Tan_Stack Twitter', to: 'https://twitter.com/tan_stack' },
-  {
-    label: '@TannerLinsley Twitter',
-    to: 'https://twitter.com/tannerlinsley',
-  },
-  { label: 'GitHub', to: 'https://github.com/tanstack' },
-  {
-    label: 'Youtube',
-    to: 'https://www.youtube.com/user/tannerlinsley',
-  },
+  { label: 'Contact', to: 'mailto:hello@stzdev.com' },
+  { label: 'LinkedIn', to: 'https://linkedin.com/company/stzdev' },
+  { label: 'GitHub', to: 'https://github.com/stzdev' },
   {
     label: 'Privacy Policy',
     to: '/privacy',
@@ -43,7 +36,7 @@ export function Footer() {
         ))}
       </div>
       <div className={`text-center opacity-20`}>
-        &copy; {new Date().getFullYear()} TanStack LLC
+        &copy; {new Date().getFullYear()} STZ Dev
       </div>
     </div>
   )

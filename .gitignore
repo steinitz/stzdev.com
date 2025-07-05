@@ -9,6 +9,7 @@ yarn.lock
 .output
 .vinxi
 .tanstack-start/build
+.tanstack
 .nitro/*
 .netlify/*
 

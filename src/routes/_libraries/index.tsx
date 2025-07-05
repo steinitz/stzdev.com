@@ -1,20 +1,10 @@
-import { Await, Link, MatchRoute, getRouteApi } from '@tanstack/react-router'
-import { Carbon } from '~/components/Carbon'
+import { Link } from '@tanstack/react-router'
 import { twMerge } from 'tailwind-merge'
-import { CgSpinner } from 'react-icons/cg'
 import { Footer } from '~/components/Footer'
-import SponsorPack from '~/components/SponsorPack'
-import discordImage from '~/images/discord-logo-white.svg'
-import { useMutation } from '~/hooks/useMutation'
 import { sample } from '~/utils/utils'
-import { librariesByGroup, librariesGroupNamesMap, Library } from '~/libraries'
 
 import splashLightImg from '~/images/splash-light.png'
 import splashDarkImg from '~/images/splash-dark.png'
-import { GadFooter } from '~/components/GoogleScripts'
-import LandingPageGad from '~/components/LandingPageGad'
-import { MaintainerCard } from '~/components/MaintainerCard'
-import { coreMaintainers } from '~/libraries/maintainers'
 
 export const textColors = [
   `text-rose-500`,
@@ -30,33 +20,34 @@ export const gradients = [
   `from-blue-500 to-pink-500`,
 ]
 
-const courses = [
+const resources = [
   {
-    name: 'The Official TanStack React Query Course',
-    cardStyles: `border-t-4 border-red-500 hover:(border-green-500)`,
-    href: 'https://query.gg/?s=tanstack',
-    description: `Learn how to build enterprise quality apps with TanStack's React Query the easy way with our brand new course.`,
+    name: 'AI Agent Development Blog',
+    cardStyles: `border-t-4 border-blue-500 hover:(border-cyan-500)`,
+    href: '/blog',
+    description: `In-depth articles about building AI agents with React, best practices, case studies, and the latest developments in AI-powered web applications.`,
+  },
+  {
+    name: 'Free Consultation',
+    cardStyles: `border-t-4 border-green-500 hover:(border-emerald-500)`,
+    href: 'mailto:hello@stzdev.com',
+    description: `Schedule a free 30-minute consultation to discuss your AI agent project. We'll explore your requirements and provide strategic guidance.`,
   },
 ]
 
-export const Route = createFileRoute({
-  loader: () => {
-    return {
-      randomNumber: Math.random(),
-    }
-  },
-  component: Index,
-})
-
-
-
-const librariesRouteApi = getRouteApi('/_libraries')
+export const Route = createFileRoute(
+  {
+    loader: () => {
+      return {
+        randomNumber: Math.random(),
+      }
+    },
+    component: Index,
+  }
+)
 
 function Index() {
-
-
   const { randomNumber } = Route.useLoaderData()
-  const { sponsorsPromise } = librariesRouteApi.useLoaderData()
   const gradient = sample(gradients, randomNumber)
 
   return (
@@ -75,12 +66,12 @@ function Index() {
             <img
               src={splashLightImg}
               className="w-[300px] pt-8 xl:pt-0 xl:w-[400px] 2xl:w-[500px] dark:hidden"
-              alt="TanStack Logo"
+              alt="STZ Dev Logo"
             />
             <img
               src={splashDarkImg}
               className="w-[300px] pt-8 xl:pt-0 xl:w-[400px] 2xl:w-[500px] hidden dark:block"
-              alt="TanStack Logo"
+              alt="STZ Dev Logo"
             />
             <div className="flex flex-col items-center gap-6 text-center px-4 xl:text-left xl:items-start">
               <div className="flex gap-2 lg:gap-4 items-center">
@@ -93,10 +84,10 @@ function Index() {
                   <span
                     className={`
             inline-block text-black dark:text-white
-            mb-2 uppercase [letter-spacing:-.04em] pr-1.5
+            mb-2 [letter-spacing:-.04em] pr-1.5
             `}
                   >
-                    TanStack
+                    STZ Dev
                   </span>
                 </h1>
               </div>
@@ -105,99 +96,106 @@ function Index() {
             md:text-4xl md:max-w-2xl
             2xl:text-5xl lg:max-w-2xl text-balance"
               >
-                High-quality open-source software for{' '}
-                <span className="underline decoration-dashed decoration-yellow-500 decoration-3 underline-offset-2">
-                  web developers.
+                Building the future with{' '}
+                <span className="underline decoration-dashed decoration-blue-500 decoration-3 underline-offset-2">
+                  AI-Agent products.
                 </span>
               </h2>
               <p
                 className="text opacity-90 max-w-sm
             lg:text-xl lg:max-w-2xl text-balance"
               >
-                Headless, type-safe, & powerful utilities for Web Applications,
-                Routing, State Management, Data Visualization, Datagrids/Tables,
-                and more.
+                Expert React development services for companies creating
+                intelligent, autonomous AI agents. From concept to production,
+                we build scalable, type-safe solutions that work.
               </p>
             </div>
           </div>
         </div>
         <div className="px-4 lg:max-w-screen-lg md:mx-auto">
-          <h3 className={`text-4xl font-light`}>Open Source Libraries</h3>
+          <h3 className={`text-4xl font-light`}>AI Development Services</h3>
 
-          {Object.entries(librariesByGroup).map(
-            ([groupName, groupLibraries]: [string, Library[]]) => (
-              <div key={groupName} className="mt-8">
-                <h4 className={`text-2xl font-medium capitalize mb-6`}>
-                  {
-                    librariesGroupNamesMap[
-                      groupName as keyof typeof librariesGroupNamesMap
-                    ]
-                  }
-                </h4>
-                {/* Library Cards */}
-                <div
-                  className={`grid grid-cols-1 gap-6 gap-y-8 justify-center
+          <div className="mt-8">
+            <h4 className={`text-2xl font-medium mb-6`}>
+              Core Expertise
+            </h4>
+            {/* Service Cards */}
+            <div
+              className={`grid grid-cols-1 gap-6 gap-y-8 justify-center
                 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3`}
-                >
-                  {groupLibraries.map((library, i: number) => {
-                    return (
-                      <Link
-                        key={library.name}
-                        to={library.to ?? '#'}
-                        params
-                        className={twMerge(
-                          `border-2 border-transparent rounded-xl shadow-md p-8 transition-all duration-300
-                          bg-white/90 dark:bg-black/40 backdrop-blur-sm
-                          dark:border-gray-800/50`,
-                          'hover:shadow-lg',
-                          'relative overflow-hidden group',
-                          'min-h-[250px] xl:min-h-[220px]',
-                          library.cardStyles
-                        )}
-                        style={{
-                          zIndex: i,
-                        }}
+            >
+              {[
+                {
+                  name: 'AI Agent Architecture',
+                  tagline: 'Scalable, intelligent systems',
+                  description: 'Design and build robust AI agent architectures using React, TypeScript, and modern web technologies. From conversational interfaces to autonomous decision-making systems.',
+                  color: 'text-blue-500',
+                  bgColor: 'bg-blue-500/10',
+                  borderColor: 'hover:border-blue-500'
+                },
+                {
+                  name: 'React Integration',
+                  tagline: 'Seamless AI-powered UIs',
+                  description: 'Expert integration of AI capabilities into React applications. Real-time streaming, state management, and responsive interfaces that handle complex AI interactions.',
+                  color: 'text-cyan-500',
+                  bgColor: 'bg-cyan-500/10',
+                  borderColor: 'hover:border-cyan-500'
+                },
+                {
+                  name: 'Production Deployment',
+                  tagline: 'Enterprise-ready solutions',
+                  description: 'Full-stack deployment strategies for AI agents. Performance optimization, monitoring, scaling, and maintenance of production AI systems.',
+                  color: 'text-green-500',
+                  bgColor: 'bg-green-500/10',
+                  borderColor: 'hover:border-green-500'
+                }
+              ].map((service, i: number) => {
+                return (
+                  <div
+                    key={service.name}
+                    className={twMerge(
+                      `border-2 border-transparent rounded-xl shadow-md p-8 transition-all duration-300
+                      bg-white/90 dark:bg-black/40 backdrop-blur-sm
+                      dark:border-gray-800/50`,
+                      'hover:shadow-lg',
+                      'relative overflow-hidden group',
+                      'min-h-[250px] xl:min-h-[220px]',
+                      service.borderColor
+                    )}
+                    style={{
+                      zIndex: i,
+                    }}
+                  >
+                    {/* Background content that will blur on hover */}
+                    <div className="z-0 relative group-hover:blur-[0.5px] transition-[filter] duration-200">
+                      <div className="flex gap-2 justify-between items-center">
+                        <div
+                          className={twMerge(
+                            `flex items-center gap-2 text-[1.2rem] font-extrabold [letter-spacing:-.04em]`,
+                            service.color
+                          )}
+                        >
+                          <span className={twMerge("rounded-lg leading-none flex items-center", service.bgColor)}>
+                            <span className="font-black text-xs leading-none p-1.5 px-2">
+                              STZ
+                            </span>
+                          </span>
+                          <span className="text-current">
+                            {service.name}
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        className={twMerge(`text-sm italic font-medium mt-3`, service.color)}
                       >
-                        {/* Background content that will blur on hover */}
-                        <div className="z-0 relative group-hover:blur-[0.5px] transition-[filter] duration-200">
-                          <div className="flex gap-2 justify-between items-center">
-                            <MatchRoute
-                              pending
-                              to={library.to}
-                              children={(isPending) => {
-                                return (
-                                  <div
-                                    className={twMerge(
-                                      `flex items-center gap-2 text-[1.2rem] font-extrabold uppercase [letter-spacing:-.04em]`
-                                    )}
-                                    style={{
-                                      viewTransitionName: `library-name-${library.id}`,
-                                    }}
-                                  >
-                                    <span className="bg-current rounded-lg leading-none flex items-center">
-                                      <span className="font-black text-white dark:text-black text-xs leading-none p-1.5 px-2 uppercase">
-                                        TanStack
-                                      </span>
-                                    </span>
-                                    <span className="text-current">
-                                      {library.name.replace('TanStack ', '')}
-                                    </span>
-                                  </div>
-                                )
-                              }}
-                            />
-                          </div>
-                          <div
-                            className={`text-sm italic font-medium mt-3 text-current`}
-                          >
-                            {library.tagline}
-                          </div>
+                        {service.tagline}
+                      </div>
 
-                          {/* Description preview with ellipsis */}
-                          <div
-                            className={`text-sm mt-3 text-gray-700 dark:text-gray-300 line-clamp-3 leading-relaxed`}
-                          >
-                            {library.description}
+                      {/* Description preview with ellipsis */}
+                      <div
+                        className={`text-sm mt-3 text-gray-700 dark:text-gray-300 line-clamp-3 leading-relaxed`}
+                      >
+                        {service.description}
                           </div>
                         </div>
 
@@ -210,14 +208,14 @@ function Index() {
                           <div
                             className={`text-sm text-gray-800 dark:text-gray-200 leading-relaxed`}
                           >
-                            {library.description}
+                            {service.description}
                           </div>
                           <div className="mt-6 text-center">
                             <span
                               className="inline-flex items-center gap-2 px-4 py-2 bg-black/5 dark:bg-white/10 
                               rounded-full text-sm font-medium text-gray-900 dark:text-white"
                             >
-                              Click to learn more
+                              Learn more about this service
                               <svg
                                 className="w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-0.5"
                                 fill="none"
@@ -234,130 +232,118 @@ function Index() {
                             </span>
                           </div>
                         </div>
-                        {/* Badge */}
-                        {library.badge ? (
-                          <div
-                            className={twMerge(`absolute top-0 right-0 z-20`)}
-                          >
-                            <div
-                              className={twMerge(
-                                `w-[100px] h-[100px] rounded-full translate-x-1/2 -translate-y-1/2`,
-                                library.bgStyle
-                              )}
-                            />
-                            <span
-                              className={twMerge(
-                                'inline-block transform rotate-45 uppercase text-white font-black italic animate-pulse text-xs',
-                                library.badge.length > 4
-                                  ? 'absolute top-[16px] right-[-2px]'
-                                  : 'absolute top-[14px] right-[5px]'
-                              )}
-                            >
-                              {library.badge}
-                            </span>
-                          </div>
-                        ) : null}
-                      </Link>
+                      </div>
                     )
                   })}
                 </div>
               </div>
-            )
-          )}
         </div>
 
 
 
         <div className={`lg:max-w-screen-lg px-4 mx-auto`}>
-          <h3 className={`text-4xl font-light mb-6`}>Courses</h3>
-          <div className={`mt-4 grid grid-cols-1 gap-4`}>
-            {courses.map((course) => (
-              <a
-                key={course.name}
-                href={course.href}
+          <h3 className={`text-4xl font-light mb-6`}>Resources & Contact</h3>
+          <div className={`mt-4 grid grid-cols-1 md:grid-cols-2 gap-4`}>
+            {resources.map((resource) => (
+              <Link
+                key={resource.name}
+                to={resource.href.startsWith('/') ? resource.href : undefined}
+                href={resource.href.startsWith('mailto:') ? resource.href : undefined}
                 className={`flex gap-2 justify-between border-2 border-transparent rounded-lg p-4 md:p-8
               transition-all bg-white/90 dark:bg-black/40
-              shadow-xl shadow-green-700/10 dark:shadow-green-500/30
-              hover:border-green-500
+              shadow-xl shadow-blue-700/10 dark:shadow-blue-500/30
+              hover:border-blue-500
               `}
-                target="_blank"
-                rel="noreferrer"
+                target={resource.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={resource.href.startsWith('mailto:') ? undefined : 'noreferrer'}
               >
                 <div
                   className={`col-span-2
                     md:col-span-5`}
                 >
-                  <div className={`text-2xl font-bold text-green-500`}>
-                    {course.name}
+                  <div className={`text-2xl font-bold text-blue-500`}>
+                    {resource.name}
                   </div>
-                  <div className={`text-sm mt-2`}>{course.description}</div>
+                  <div className={`text-sm mt-2`}>{resource.description}</div>
                   <div
-                    className={`inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded shadow uppercase font-black text-sm`}
+                    className={`inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded shadow uppercase font-black text-sm`}
                   >
-                    Check it out →
+                    {resource.href.startsWith('mailto:') ? 'Get in touch →' : 'Explore →'}
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
-          </div>
-        </div>
-
-        <div className={`lg:max-w-screen-lg px-4 mx-auto`}>
-          <h3 className={`text-4xl font-light`}>OSS Sponsors</h3>
-          <div className="h-6" />
-          <div
-            style={{
-              aspectRatio: '1/1',
-            }}
-            className="max-w-[1000px] mx-auto"
-          >
-            <Await
-              promise={sponsorsPromise}
-              fallback={<CgSpinner className="text-2xl animate-spin mx-auto" />}
-              children={(sponsors) => {
-                return <SponsorPack sponsors={sponsors} />
-              }}
-            />
-          </div>
-          <div className={`h-8`} />
-          <div className={`text-center`}>
-            <div>
-              <a
-                href="https://github.com/sponsors/tannerlinsley"
-                className={`inline-block p-4 bg-green-500 rounded text-white uppercase font-black`}
-              >
-                Become a Sponsor!
-              </a>
-            </div>
-            <div className={`h-4`} />
-            <p className={`italic mx-auto max-w-screen-sm text-gray-500`}>
-              Sponsors get special perks like{' '}
-              <strong>
-                private discord channels, priority issue requests, direct
-                support and even course vouchers
-              </strong>
-              !
-            </p>
           </div>
         </div>
 
         <div className="px-4 lg:max-w-screen-lg md:mx-auto">
-          <h3 className={`text-4xl font-light mb-6`}>Core Maintainers</h3>
-          <div className={`grid gap-6 grid-cols-2 lg:grid-cols-3`}>
-            {coreMaintainers.map((maintainer) => (
-              <MaintainerCard key={maintainer.github} maintainer={maintainer} />
-            ))}
+          <h3 className={`text-4xl font-light mb-6`}>Why Choose STZ Dev?</h3>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold mb-2">Fast Delivery</h4>
+              <p className="text-gray-600 dark:text-gray-400">Rapid prototyping and iterative development to get your AI agent to market quickly.</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold mb-2">Production Ready</h4>
+              <p className="text-gray-600 dark:text-gray-400">Enterprise-grade solutions built for scale, reliability, and maintainability.</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold mb-2">Expert Guidance</h4>
+              <p className="text-gray-600 dark:text-gray-400">Strategic consulting and technical leadership from AI development specialists.</p>
+            </div>
           </div>
         </div>
 
-        <LandingPageGad />
+        <div className="bg-gray-50 dark:bg-gray-800">
+          <div className="px-4 py-12 mx-auto max-w-screen-lg">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                Meet the Founder
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                Experienced developer passionate about AI and modern web technologies
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 max-w-sm">
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-white text-2xl font-bold">S</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    STZ Dev
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-center">
+                    Full-stack developer specializing in React, TypeScript, and AI integration. 
+                    Helping companies build scalable AI-powered applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="px-4 mx-auto max-w-screen-lg">
           <div
             className={`
           rounded-md p-4 grid gap-6
-          bg-discord text-white overflow-hidden relative
-          shadow-xl shadow-indigo-700/30
+          bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden relative
+          shadow-xl shadow-blue-700/30
           sm:p-8 sm:grid-cols-3 items-center`}
           >
             <div
@@ -365,30 +351,24 @@ function Index() {
             right-0 top-0 -translate-y-1/3 translate-x-1/3
             sm:opacity-20`}
             >
-              <img
-                src={discordImage}
-                alt="Discord Logo"
-                width={300}
-                height={300}
-              />
+              <svg width={300} height={300} viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
             </div>
             <div className={`sm:col-span-2`}>
-              <h3 className={`text-3xl`}>TanStack on Discord</h3>
+              <h3 className={`text-3xl`}>Ready to Build Your AI Agent?</h3>
               <p className={`mt-4`}>
-                The official TanStack community to ask questions, network and
-                make new friends and get lightning fast news about what's coming
-                next for TanStack!
+                Let's discuss your project requirements and explore how we can help you build
+                a powerful, scalable AI agent solution. From initial concept to production deployment.
               </p>
             </div>
             <div className={`flex items-center justify-center`}>
               <a
-                href="https://discord.com/invite/WrRKjPJ"
-                target="_blank"
-                className={`block w-full mt-4 px-4 py-2 bg-white text-discord
-                text-center rounded shadow-lg z-10 uppercase font-black`}
-                rel="noreferrer"
+                href="mailto:hello@stzdev.com"
+                className={`block w-full mt-4 px-4 py-2 bg-white text-blue-600
+                text-center rounded shadow-lg z-10 uppercase font-black hover:bg-gray-100 transition-colors`}
               >
-                Join TanStack Discord
+                Start Your Project
               </a>
             </div>
           </div>

@@ -5,7 +5,7 @@ const listJoiner = new Intl.ListFormat('en-US', {
 
 export function formatAuthors(authors: Array<string>) {
   if (!authors.length) {
-    return 'TanStack'
+    return 'STZ Dev'
   }
 
   return listJoiner.format(authors)
