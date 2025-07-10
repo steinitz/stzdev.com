@@ -97,8 +97,8 @@ function Index() {
             2xl:text-5xl lg:max-w-2xl text-balance"
               >
                 Building the future with{' '}
-                <span className="underline decoration-dashed decoration-blue-500 decoration-3 underline-offset-2">
-                  AI-Agent products.
+                <span className="underline decoration-dashed decoration-teal-500 decoration-3 underline-offset-4">
+                  AI-Agents
                 </span>
               </h2>
               <p
@@ -196,47 +196,47 @@ function Index() {
                         className={`text-sm mt-3 text-gray-700 dark:text-gray-300 line-clamp-3 leading-relaxed`}
                       >
                         {service.description}
-                          </div>
-                        </div>
+                      </div>
+                    </div>
 
-                        {/* Foreground content that appears on hover */}
-                        <div
-                          className="absolute inset-0 z-30 bg-white/95 dark:bg-black/95 p-6
+                    {/* Foreground content that appears on hover */}
+                    <div
+                      className="absolute inset-0 z-30 bg-white/95 dark:bg-black/95 p-6
                           backdrop-blur-sm flex flex-col justify-center opacity-0 group-hover:opacity-100
                           transition-opacity duration-300"
-                        >
-                          <div
-                            className={`text-sm text-gray-800 dark:text-gray-200 leading-relaxed`}
-                          >
-                            {service.description}
-                          </div>
-                          <div className="mt-6 text-center">
-                            <span
-                              className="inline-flex items-center gap-2 px-4 py-2 bg-black/5 dark:bg-white/10 
-                              rounded-full text-sm font-medium text-gray-900 dark:text-white"
-                            >
-                              Learn more about this service
-                              <svg
-                                className="w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-0.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
+                    >
+                      <div
+                        className={`text-sm text-gray-800 dark:text-gray-200 leading-relaxed`}
+                      >
+                        {service.description}
                       </div>
-                    )
-                  })}
-                </div>
-              </div>
+                      <div className="mt-6 text-center">
+                        <span
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-black/5 dark:bg-white/10 
+                              rounded-full text-sm font-medium text-gray-900 dark:text-white"
+                        >
+                          Learn more about this service
+                          <svg
+                            className="w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-0.5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
         </div>
 
 
@@ -316,21 +316,34 @@ function Index() {
                 Meet the Founder
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Experienced developer passionate about AI and modern web technologies
+                Experienced developer passionate about AI Agents and modern web tools
               </p>
-            </div>
+            </div>s
             <div className="flex justify-center">
               <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 max-w-sm">
                 <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
+                  {/* <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
                     <span className="text-white text-2xl font-bold">S</span>
+                  </div> */}
+                  <div className="w-24 h-24">
+                    <img
+                      alt={`Avatar of Steve Steinitz`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      src={'src/images/people/stevesteinitz.png'}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        aspectRatio: '1/1',
+                        objectFit: 'cover',
+                      }}
+                    />
                   </div>
+                  <br />
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    STZ Dev
+                    Steve Steinitz
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-center">
-                    Full-stack developer specializing in React, TypeScript, and AI integration. 
-                    Helping companies build scalable AI-powered applications.
+                    Helping companies build AI-powered applications using React, TanStack, GenSX... 
                   </p>
                 </div>
               </div>
@@ -352,7 +365,7 @@ function Index() {
             sm:opacity-20`}
             >
               <svg width={300} height={300} viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
               </svg>
             </div>
             <div className={`sm:col-span-2`}>
