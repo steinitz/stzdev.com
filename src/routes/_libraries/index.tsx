@@ -321,30 +321,30 @@ function Index() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 max-w-sm">
+              <div className="bg-white dark:bg-gray-900 rounded-xl shadow-xl p-8 max-w-md border border-gray-100 dark:border-gray-800">
                 <div className="flex flex-col items-center">
-                  {/* <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-white text-2xl font-bold">S</span>
-                  </div> */}
-                  <div className="w-24 h-24">
-                    <img
-                      alt={`Avatar of Steve Steinitz`}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      src={steveSteinitzImg}
-                      loading="lazy"
-                      decoding="async"
-                      style={{
-                        aspectRatio: '1/1',
-                        objectFit: 'cover',
-                      }}
-                    />
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 rounded-full overflow-hidden ring-4 ring-blue-500/20 shadow-lg">
+                      <img
+                        alt={`Avatar of Steve Steinitz`}
+                        className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                        src={steveSteinitzImg}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 flex items-center justify-center">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
                   </div>
-                  <br />
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                     Steve Steinitz
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-center">
-                    Helping companies build AI-powered applications using React, TanStack, GenSX... 
+                  <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">
+                    Founder & Lead Developer
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+                    Helping companies build AI-powered applications using React, TanStack, and modern web technologies.
                   </p>
                 </div>
               </div>
