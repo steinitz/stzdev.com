@@ -5,6 +5,7 @@ import { sample } from '~/utils/utils'
 
 import splashLightImg from '~/images/splash-light.png'
 import splashDarkImg from '~/images/splash-dark.png'
+import steveSteinitzImg from '~/images/people/stevesteinitz.png'
 
 export const textColors = [
   `text-rose-500`,
@@ -318,7 +319,7 @@ function Index() {
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
                 Experienced developer passionate about AI Agents and modern web tools
               </p>
-            </div>s
+            </div>
             <div className="flex justify-center">
               <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 max-w-sm">
                 <div className="flex flex-col items-center">
@@ -329,7 +330,7 @@ function Index() {
                     <img
                       alt={`Avatar of Steve Steinitz`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      src={'src/images/people/stevesteinitz.png'}
+                      src={steveSteinitzImg}
                       loading="lazy"
                       decoding="async"
                       style={{
