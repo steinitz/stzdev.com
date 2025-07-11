@@ -240,8 +240,6 @@ function Index() {
           </div>
         </div>
 
-
-
         <div className={`lg:max-w-screen-lg px-4 mx-auto`}>
           <h3 className={`text-4xl font-light mb-6`}>Resources & Contact</h3>
           <div className={`mt-4 grid grid-cols-1 md:grid-cols-2 gap-4`}>
@@ -344,7 +342,7 @@ function Index() {
                     Founder & Lead Developer
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                    Helping companies build AI-powered applications using React, TanStack, and modern web technologies.
+                    Helping companies build AI-powered applications using React, TanStack, and modern web tools.
                   </p>
                 </div>
               </div>
