@@ -43,14 +43,13 @@ function LibrariesLayout() {
 
   // Preferred Tools section
   const preferredTools = [
-    { label: 'React', to: 'https://react.dev', external: true, colorClass: '' },
-    { label: 'TanStack', to: '/start', external: false },
-    { label: 'TanStack Start', to: '/start', external: false },
+    { label: 'React', colorClass: '' },
+    { label: 'TanStack Start', to: '/start', external: false }, // where does it get the colored title, TanStack Start?
     { label: 'TanStack Router', to: '/router', external: false },
     { label: 'TanStack Query', to: '/query', external: false },
-    { label: 'AI Agent', to: 'https://github.com/stzdev/ai-agent', external: true, colorClass: '' },
-    { label: 'GenSX', to: 'https://github.com/stzdev/gensx', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
-    { label: 'Authentication', to: '/auth', external: false },
+    { label: 'AI Agent', colorClass: '' },
+    { label: 'GenSX', to: 'https://github.com/gensx-inc/gensx', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
+    { label: 'Authentication' },
     { label: 'Better Auth', to: 'https://www.better-auth.com', external: true, colorClass: 'text-orange-500 dark:text-orange-400' },
   ]
 
@@ -59,10 +58,22 @@ function LibrariesLayout() {
       {/* Preferred Tools Section */}
       <div className="mb-4">
         <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 tracking-wider px-2 mb-2">
-        Preferred Tools
-      </h3>
+          Preferred Tools
+        </h3>
         {preferredTools.map((tool, i) => {
-          if (tool.external) {
+          if (!tool.to) {
+            return (
+              <p
+                key={i}
+                className={twMerge(linkClasses, 'font-normal')}
+              >
+                <div className="flex items-center gap-2">
+                  <div className={tool.colorClass || ''}>{tool.label}</div>
+                </div>
+              </p>
+            )
+          }
+          else if (tool.external) {
             return (
               <a
                 key={i}
@@ -137,7 +148,7 @@ function LibrariesLayout() {
           }
         })}
       </div>
-      
+
       {/* Streamlined bottom navigation */}
       {[
         {
