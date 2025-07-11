@@ -48,7 +48,7 @@ function LibrariesLayout() {
     { label: 'TanStack Router', to: '/router', external: false },
     { label: 'TanStack Query', to: '/query', external: false },
     { label: 'AI Agent', colorClass: '' },
-    { label: 'GenSX', to: 'https://github.com/gensx-inc/gensx', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
+    { label: 'GenSX', to: 'https://www.gensx.com/', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
     { label: 'Authentication' },
     { label: 'Better Auth', to: 'https://www.better-auth.com', external: true, colorClass: 'text-orange-500 dark:text-orange-400' },
   ]
@@ -65,7 +65,7 @@ function LibrariesLayout() {
             return (
               <p
                 key={i}
-                className={twMerge(linkClasses, 'font-normal')}
+                className='flex items-center justify-between group px-2 py-1 rounded-lg font-black font-bold'
               >
                 <div className="flex items-center gap-2">
                   <div className={tool.colorClass || ''}>{tool.label}</div>
@@ -80,7 +80,7 @@ function LibrariesLayout() {
                 href={tool.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={twMerge(linkClasses, 'font-normal')}
+                className={twMerge(linkClasses, 'font-normal', 'm-2')}
               >
                 <div className="flex items-center gap-2">
                   <div className={tool.colorClass || ''}>{tool.label}</div>
@@ -106,6 +106,7 @@ function LibrariesLayout() {
                         className={twMerge(
                           linkClasses,
                           'font-normal',
+                          'm-2',
                           props.isActive
                             ? 'bg-gray-500/10 dark:bg-gray-500/30 font-bold'
                             : ''
