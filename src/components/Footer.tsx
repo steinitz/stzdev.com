@@ -3,8 +3,8 @@ import { Link } from '@tanstack/react-router'
 const footerLinks = [
   { label: 'Blog', to: '/blog' },
   { label: 'Contact', to: 'mailto:hello@stzdev.com' },
-  { label: 'LinkedIn', to: 'https://linkedin.com/company/stzdev' },
-  { label: 'GitHub', to: 'https://github.com/stzdev' },
+  { label: 'LinkedIn', to: 'https://linkedin.com/company/steinitz' },
+  { label: 'GitHub', to: 'https://github.com/steinitz' },
   {
     label: 'Privacy Policy',
     to: '/privacy',

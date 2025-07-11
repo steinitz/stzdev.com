@@ -23,16 +23,16 @@ export const gradients = [
 
 const resources = [
   {
-    name: 'AI Agent Development Blog',
+    name: 'AI-Agent Development Blog',
     cardStyles: `border-t-4 border-blue-500 hover:(border-cyan-500)`,
     href: '/blog',
     description: `In-depth articles about building AI agents with React, best practices, case studies, and the latest developments in AI-powered web applications.`,
   },
   {
-    name: 'Free Consultation',
+    name: 'Free Email Consultation',
     cardStyles: `border-t-4 border-green-500 hover:(border-emerald-500)`,
     href: 'mailto:hello@stzdev.com',
-    description: `Schedule a free 30-minute consultation to discuss your AI agent project. We'll explore your requirements and provide strategic guidance.`,
+    description: `Start a free consultation to discuss your AI-agent project. We'll explore your ideas and plan next steps.`,
   },
 ]
 
@@ -99,7 +99,7 @@ function Index() {
               >
                 Building the future with{' '}
                 <span className="underline decoration-dashed decoration-teal-500 decoration-3 underline-offset-4">
-                  AI-Agents
+                  AI Agents
                 </span>
               </h2>
               <p
@@ -114,7 +114,7 @@ function Index() {
           </div>
         </div>
         <div className="px-4 lg:max-w-screen-lg md:mx-auto">
-          <h3 className={`text-4xl font-light`}>AI Development Services</h3>
+          <h3 className={`text-4xl font-light`}>AI-Agent Development Services</h3>
 
           <div className="mt-8">
             <h4 className={`text-2xl font-medium mb-6`}>
@@ -127,9 +127,9 @@ function Index() {
             >
               {[
                 {
-                  name: 'AI Agent Architecture',
+                  name: 'AI-Agent Architecture',
                   tagline: 'Scalable, intelligent systems',
-                  description: 'Design and build robust AI agent architectures using React, TypeScript, and modern web technologies. From conversational interfaces to autonomous decision-making systems.',
+                  description: 'Design and build robust AI-agent architectures using React, TypeScript, and modern web tools. From conversational interfaces to autonomous decision-making systems.',
                   color: 'text-blue-500',
                   bgColor: 'bg-blue-500/10',
                   borderColor: 'hover:border-blue-500'
