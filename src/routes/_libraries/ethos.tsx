@@ -1,13 +1,14 @@
 import {Footer} from '~/components/Footer'
 import {seo} from '~/utils/seo'
+import {SITE_NAME} from '~/utils/constants'
 
-export const Route = createFileRoute({
+export const Route = createFileRoute({ 
   component: RouteComp,
   head: () => ({
     meta: seo({
-      title: 'StzDev Ethos',
+      title: `${SITE_NAME} Ethos`,
       description:
-        'Our philosophy and commitment to building for the open web.',
+        'My personal philosophy and approach to software development and client relationships.',
     }),
   }),
 })
@@ -17,137 +18,79 @@ export default function RouteComp() {
     <div className="flex flex-col max-w-full min-h-screen gap-12 p-4 md:p-8 pb-0">
       <div className="flex-1 space-y-12 w-full max-w-3xl mx-auto">
         <header className="">
-          <h1 className="text-4xl font-bold">TanStack Ethos</h1>
+          <h1 className="text-4xl font-bold">{SITE_NAME} Ethos</h1>
         </header>
 
         <section className="">
           <p className="text-lg">
-            At TanStack, our philosophy is simple: we build for the open web,
-            open standards, and the freedom to compose, deploy, and innovate
-            however you see fit.
+            My approach to software development is built on principles that prioritize
+            genuine value, honest communication, and the joy of building great things.
           </p>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">
-            Independently Owned, Unbiased by Design
-          </h2>
+          <h2 className="text-2xl font-semibold">Value Above All</h2>
           <p>
-            TanStack LLC is <strong>100% privately owned</strong> by its
-            founder—no external investors, no controlling interests, and no
-            hidden agendas. Our funding comes from media and marketing
-            partnerships with companies that share our core values:{' '}
-            <strong>
-              the open web, open standards, and the freedom to compose and
-              deploy anything you want, anywhere you please.
-            </strong>
+            Every service I provide must deliver <strong>more value than it costs</strong>.
+            This isn't just about pricing—it's about ensuring that what I build genuinely
+            improves your business, solves real problems, and moves you forward.
           </p>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">A Sustainable Future</h2>
+          <h2 className="text-2xl font-semibold">Radical Honesty</h2>
           <p>
-            TanStack is a lean, focused team: a full-time founder, several
-            prominent and well-sponsored maintainers and a thriving community of
-            users and contributors who share our core values.
+            I believe in <strong>clear communication</strong>, even when it's uncomfortable.
+            I'm willing to risk losing a client to give you a realistic assessment of what
+            a project actually requires. No sugar-coating timelines, no overselling capabilities,
+            no false promises.
           </p>
-          <p className="">
-            Unlike venture-backed projects chasing growth at all costs,{' '}
-            <strong>
-              we don't need to "scale", "grow", or "expand" into a VC-funded,
-              acquisition-seeking, or freemium-grifting product.
-            </strong>{' '}
-            We're not obsessed with hitting the next 10x multiplier to satisfy
-            some parent company's lead-generating IPO ambitions.
+          <p>
+            I have <strong>nothing to prove about my intelligence</strong>. If I don't understand
+            something, I'll say so. Pretending to know what I don't wastes everyone's time and
+            leads to poor outcomes.
           </p>
-          <p className="">That means:</p>
-          <ul className="list-disc pl-8 space-y-2">
-            <li>
-              No pressure to chase profits at the cost of developer experience.
-            </li>
-            <li>No corporate influence dictating our technical direction.</li>
-            <li>
-              A singular focus on{' '}
-              <strong>
-                building tools that make the web better for users and developers
-              </strong>
-            </li>
-          </ul>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">
-            Technology-Agnostic by Default
-          </h2>
+          <h2 className="text-2xl font-semibold">Joy in the Process</h2>
           <p>
-            We believe in{' '}
-            <strong>
-              framework-agnostic, platform-agnostic, and future-proof tooling
-            </strong>{' '}
-            that puts developers first:
+            <strong>Joy is as important as technology, politics, even outcomes.</strong>
+            Work should be fulfilling, not just functional. When we enjoy what we're building,
+            we build it better.
           </p>
-          <ul className="list-disc pl-8 space-y-2">
-            <li>
-              TanStack libraries are built on framework and platform-agnostic
-              primitives. When our libraries build on other tools, like TanStack
-              Start builds on Vite, we ensure that these tools uphold these same
-              values of openness and flexibility.
-            </li>
-            <li>
-              <strong>TanStack Libraries</strong> either already support or will
-              support all major (and some minor!) frameworks and deployment
-              environments—no exceptions.
-            </li>
-            <li>
-              <strong>
-                If there's any technology we're aligned with, it's TypeScript
-              </strong>
-              —or more broadly, "typed JavaScript", whatever that evolves into
-              as time goes on.
-            </li>
-          </ul>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">Open Sponsorships</h2>
+          <h2 className="text-2xl font-semibold">Essential Meetings Only</h2>
           <p>
-            Every sponsor we work with not only understands but actively upholds
-            our values:
+            While I enjoy collaborating and discussing ideas, I try to have only
+            <strong> essential meetings</strong>. I prefer spending time building rather than
+            talking about building. When we do meet, let's make it count.
           </p>
-          <ul className="list-disc pl-8  space-y-2">
-            <li>
-              No sponsor can dictate or influence TanStack's core technology in
-              a way that biases it toward their platform.
-            </li>
-            <li>
-              Our libraries are built to serve <strong>developers first</strong>
-              , not corporate interests.
-            </li>
-            <li>
-              If a company supports us, it's because they believe in what we're
-              building—not because they expect preferential treatment.
-            </li>
-          </ul>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">Complete Transparency</h2>
+          <p>
+            I believe in <strong>openness about techniques, limitations, concerns, and processes</strong>.
+            No information hoarding, no black boxes. You should understand how things work,
+            what the constraints are, and what decisions we're making along the way.
+          </p>
         </section>
 
         <section className="space-y-4">
           <p className="text-lg font-medium">
-            At the end of the day,{' '}
-            <strong>
-              TanStack isn't just a set of libraries—it's a commitment to
-              building the web <em>on your terms</em>, without compromise.
-            </strong>{' '}
-            All we need is enough to keep improving tools that we believe
-            actually make the web a better place.
+            These principles guide every project I take on. They're not just ideals—they're
+            <strong> practical commitments</strong> that shape how I work, communicate, and
+            deliver value to the people I serve.
           </p>
         </section>
 
-        <section className="space-y-4">
-          <div>
-            <strong>- Tanner Linsley</strong>
-            <br />
-            Founder, TanStack LLC
-          </div>
+        <section className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+          <p className="text-gray-600 dark:text-gray-400">
+            <strong>Steve Steinitz</strong>, Founder
+          </p>
         </section>
       </div>
       <Footer />
