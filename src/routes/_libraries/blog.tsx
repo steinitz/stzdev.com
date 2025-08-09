@@ -1,11 +1,12 @@
 import { Link } from '@tanstack/react-router'
 import { seo } from '~/utils/seo'
+import { SITE_NAME } from '~/utils/constants'
 
 export const Route = createFileRoute({
   head: () => ({
     meta: seo({
-      title: 'Blog | STZ Dev',
-  description: 'The latest news and blog posts from STZ Dev!',
+      title: `Blog | ${SITE_NAME}`,
+      description: `The latest news and blog posts from ${SITE_NAME}!`,
     }),
   }),
 })

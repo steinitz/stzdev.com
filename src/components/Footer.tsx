@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router'
+import { SITE_NAME } from '~/utils/constants'
 
 const footerLinks = [
   { label: 'Blog', to: '/blog' },
@@ -36,7 +37,7 @@ export function Footer() {
         ))}
       </div>
       <div className={`text-center opacity-20`}>
-        &copy; {new Date().getFullYear()} STZ Dev
+        &copy; {new Date().getFullYear()} {SITE_NAME}
       </div>
     </div>
   )

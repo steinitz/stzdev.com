@@ -1,3 +1,5 @@
+import { SITE_NAME } from './constants'
+
 const listJoiner = new Intl.ListFormat('en-US', {
   style: 'long',
   type: 'conjunction',
@@ -5,7 +7,7 @@ const listJoiner = new Intl.ListFormat('en-US', {
 
 export function formatAuthors(authors: Array<string>) {
   if (!authors.length) {
-    return 'STZ Dev'
+    return SITE_NAME
   }
 
   return listJoiner.format(authors)

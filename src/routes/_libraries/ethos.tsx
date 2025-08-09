@@ -1,11 +1,11 @@
-import { Footer } from '~/components/Footer'
-import { seo } from '~/utils/seo'
+import {Footer} from '~/components/Footer'
+import {seo} from '~/utils/seo'
 
 export const Route = createFileRoute({
   component: RouteComp,
   head: () => ({
     meta: seo({
-      title: 'TanStack Ethos',
+      title: 'StzDev Ethos',
       description:
         'Our philosophy and commitment to building for the open web.',
     }),

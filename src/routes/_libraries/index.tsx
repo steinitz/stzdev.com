@@ -1,7 +1,8 @@
 import { Link } from '@tanstack/react-router'
-import { twMerge } from 'tailwind-merge'
-import { Footer } from '~/components/Footer'
-import { sample } from '~/utils/utils'
+import {twMerge} from 'tailwind-merge'
+import {Footer} from '~/components/Footer'
+import {sample} from '~/utils/utils'
+import {SITE_NAME} from '~/utils/constants'
 
 import splashLightImg from '~/images/splash-light.png'
 import splashDarkImg from '~/images/splash-dark.png'
@@ -48,7 +49,7 @@ export const Route = createFileRoute(
 )
 
 function Index() {
-  const { randomNumber } = Route.useLoaderData()
+  const {randomNumber} = Route.useLoaderData()
   const gradient = sample(gradients, randomNumber)
 
   return (
@@ -67,12 +68,12 @@ function Index() {
             <img
               src={splashLightImg}
               className="w-[300px] pt-8 xl:pt-0 xl:w-[400px] 2xl:w-[500px] dark:hidden"
-              alt="STZ Dev Logo"
+              alt={`${SITE_NAME} Logo`}
             />
             <img
               src={splashDarkImg}
               className="w-[300px] pt-8 xl:pt-0 xl:w-[400px] 2xl:w-[500px] hidden dark:block"
-              alt="STZ Dev Logo"
+              alt={`${SITE_NAME} Logo`}
             />
             <div className="flex flex-col items-center gap-6 text-center px-4 xl:text-left xl:items-start">
               <div className="flex gap-2 lg:gap-4 items-center">
@@ -88,7 +89,7 @@ function Index() {
             mb-2 [letter-spacing:-.04em] pr-1.5
             `}
                   >
-                    STZ Dev
+                    {SITE_NAME}
                   </span>
                 </h1>
               </div>
@@ -276,7 +277,7 @@ function Index() {
         </div>
 
         <div className="px-4 lg:max-w-screen-lg md:mx-auto">
-          <h3 className={`text-4xl font-light mb-6`}>Why Choose STZ Dev?</h3>
+          <h3 className={`text-4xl font-light mb-6`}>Why Choose {SITE_NAME}?</h3>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">

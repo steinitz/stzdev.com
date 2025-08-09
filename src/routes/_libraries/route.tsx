@@ -4,6 +4,7 @@ import { CgClose, CgMenuLeft, CgMusicSpeaker } from 'react-icons/cg'
 import { MdLibraryBooks, MdLineAxis, MdSupport, MdEmail } from 'react-icons/md'
 import { twMerge } from 'tailwind-merge'
 import { sortBy } from '~/utils/utils'
+import { SITE_NAME } from '~/utils/constants'
 import logoColor100w from '~/images/logo-color-100w.png'
 import {
   FaDiscord,
@@ -205,7 +206,7 @@ function LibrariesLayout() {
           alt=""
           className="w-[30px] rounded-full overflow-hidden border-2 border-black dark:border-none"
         />
-        <div className="font-black text-xl">STZ Dev</div>
+        <div className="font-black text-xl">{SITE_NAME}</div>
       </Link>
       <div className="flex items-center gap-1">
         <a
