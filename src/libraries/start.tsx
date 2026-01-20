@@ -19,7 +19,6 @@ export const startProject = {
   description: `Full-document SSR, Streaming, Server Functions, bundling and more, powered by TanStack Router and Vite - Ready to deploy to your favorite hosting provider.`,
   bgStyle: 'bg-cyan-500',
   textStyle: 'text-cyan-500',
-  badge: 'beta',
   repo,
   latestBranch: 'main',
   latestVersion: 'v0',
@@ -150,4 +149,4 @@ export const startProject = {
       ),
     },
   ],
-} satisfies Library
+} as Library

@@ -1,8 +1,8 @@
 import { Link } from '@tanstack/react-router'
-import {twMerge} from 'tailwind-merge'
-import {Footer} from '~/components/Footer'
-import {sample} from '~/utils/utils'
-import {SITE_NAME} from '~/utils/constants'
+import { twMerge } from 'tailwind-merge'
+import { Footer } from '~/components/Footer'
+import { sample } from '~/utils/utils'
+import { SITE_NAME } from '~/utils/constants'
 
 import splashLightImg from '~/images/splash-light.png'
 import splashDarkImg from '~/images/splash-dark.png'
@@ -49,7 +49,7 @@ export const Route = createFileRoute(
 )
 
 function Index() {
-  const {randomNumber} = Route.useLoaderData()
+  const { randomNumber } = Route.useLoaderData()
   const gradient = sample(gradients, randomNumber)
 
   return (
@@ -128,25 +128,25 @@ function Index() {
             >
               {[
                 {
-                  name: 'AI-Agent Architecture',
-                  tagline: 'Scalable, intelligent systems',
-                  description: 'Design and build robust AI-agent architectures using React, TypeScript, and modern web tools. From conversational interfaces to autonomous decision-making systems.',
+                  name: 'Complexity Spidey Sense',
+                  tagline: 'Foreseeing Project Pitfalls',
+                  description: 'An intuitive ability to detect and avoid technical debt and architectural complexity before it stalls development. Keeping projects "sober" and focused, even in the initial chaos of creation.',
                   color: 'text-blue-500',
                   bgColor: 'bg-blue-500/10',
                   borderColor: 'hover:border-blue-500'
                 },
                 {
-                  name: 'React Integration',
-                  tagline: 'Seamless AI-powered UIs',
-                  description: 'Expert integration of AI capabilities into React applications. Real-time streaming, state management, and responsive interfaces that handle complex AI interactions.',
+                  name: 'Joyful Agentic Pairing',
+                  tagline: 'Tireless Human-AI Collaboration',
+                  description: 'A patient and enthusiastic partnership with AI development tools. I leverage the tireless nature of AI to solve stubborn challenges, turning the "mysterious" into the functional through persistent iteration.',
                   color: 'text-cyan-500',
                   bgColor: 'bg-cyan-500/10',
                   borderColor: 'hover:border-cyan-500'
                 },
                 {
-                  name: 'Production Deployment',
-                  tagline: 'Enterprise-ready solutions',
-                  description: 'Full-stack deployment strategies for AI agents. Performance optimization, monitoring, scaling, and maintenance of production AI systems.',
+                  name: 'Strategic System Architecture',
+                  tagline: 'Building Enduring Foundations',
+                  description: 'High-level visualization that transforms abstract AI concepts into robust, production-ready systems. I focus on creating the enduring structures that allow intelligent, autonomous agents to thrive.',
                   color: 'text-green-500',
                   bgColor: 'bg-green-500/10',
                   borderColor: 'hover:border-green-500'
@@ -173,18 +173,22 @@ function Index() {
                       <div className="flex gap-2 justify-between items-center">
                         <div
                           className={twMerge(
-                            `flex items-center gap-2 text-[1.2rem] font-extrabold [letter-spacing:-.04em]`,
+                            `flex items-start gap-2 text-[1.2rem] font-extrabold [letter-spacing:-.04em] leading-[1.1]`,
                             service.color
                           )}
                         >
-                          <span className={twMerge("rounded-lg leading-none flex items-center", service.bgColor)}>
-                            <span className="font-black text-xs leading-none p-1.5 px-2">
+                          <span className={twMerge("mt-1 rounded-lg leading-none flex items-center shrink-0", service.bgColor)}>
+                            <span className="font-black text-xs leading-none p-1.5 px-2 text-current">
                               STZ
                             </span>
                           </span>
-                          <span className="text-current">
-                            {service.name}
-                          </span>
+                          <div className="flex flex-col">
+                            {service.name.split(' ').map((word, i) => (
+                              <span key={i} className="text-current block">
+                                {word}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       </div>
                       <div
@@ -282,29 +286,31 @@ function Index() {
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Fast Delivery</h4>
-              <p className="text-gray-600 dark:text-gray-400">Rapid prototyping and iterative development to get your AI agent to market quickly.</p>
+              <h4 className="text-xl font-semibold mb-2">Project Visualization</h4>
+              <p className="text-gray-600 dark:text-gray-400">A "crystal ball" for potential issues, identifying architectural obstacles before they become blockers.</p>
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Production Ready</h4>
-              <p className="text-gray-600 dark:text-gray-400">Enterprise-grade solutions built for scale, reliability, and maintainability.</p>
+              <h4 className="text-xl font-semibold mb-2">Tireless Patience</h4>
+              <p className="text-gray-600 dark:text-gray-400">Deep, focused persistence combined with a patient, enthusiastic approach to solving complex problems.</p>
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.613.306a4 4 0 01-1.898.47 4 4 0 01-1.898-.47l-.613-.306a6 6 0 00-3.86-.517l-2.388.477a2 2 0 00-1.022.547V18a2 2 0 002 2h11a2 2 0 002-2v-2.572z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11l-3 3m0 0l-3-3m3 3V8" />
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2">Expert Guidance</h4>
-              <p className="text-gray-600 dark:text-gray-400">Strategic consulting and technical leadership from AI development specialists.</p>
+              <h4 className="text-xl font-semibold mb-2">Complexity Avoidance</h4>
+              <p className="text-gray-600 dark:text-gray-400">Expertly distinguishing between essential and accidental complexity to keep your system clean and maintainable.</p>
             </div>
           </div>
         </div>

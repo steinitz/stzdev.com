@@ -48,8 +48,6 @@ function LibrariesLayout() {
     { label: 'TanStack Start', to: '/start', external: false }, // where does it get the colored title, TanStack Start?
     { label: 'TanStack Router', to: '/router', external: false },
     { label: 'TanStack Query', to: '/query', external: false },
-    { label: 'AI Agent', colorClass: '' },
-    { label: 'GenSX', to: 'https://www.gensx.com/', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
     { label: 'Authentication' },
     { label: 'Better Auth', to: 'https://www.better-auth.com', external: true, colorClass: 'text-orange-500 dark:text-orange-400' },
   ]
