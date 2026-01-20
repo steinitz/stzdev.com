@@ -24,10 +24,10 @@ export const gradients = [
 
 const resources = [
   {
-    name: 'AI-Agent Development Blog',
+    name: 'Development Blog',
     cardStyles: `border-t-4 border-blue-500 hover:(border-cyan-500)`,
     href: '/blog',
-    description: `In-depth articles about building AI agents with React, best practices, case studies, and the latest developments in AI-powered web applications.`,
+    description: `Topics tangential but key to successful development — from ergonomic experiments to the hidden costs of modern rituals.`,
   },
   {
     name: 'Free Email Consultation',
