@@ -1,0 +1,26 @@
+# The pages below came with the tanstack.com fork: every TanStack library's docs, in every
+# version and framework, each a server render that fetches from GitHub. Crawled, they spend
+# the Netlify team's function requests, which ChessHurdles shares. The company's own pages
+# (home, blog, ethos, privacy, terms) stay open.
+User-agent: *
+Disallow: /config
+Disallow: /create-tsrouter-app
+Disallow: /db
+Disallow: /form
+Disallow: /pacer
+Disallow: /query
+Disallow: /ranger
+Disallow: /react-charts
+Disallow: /router
+Disallow: /start
+Disallow: /store
+Disallow: /table
+Disallow: /virtual
+Disallow: /stats
+Disallow: /dashboard
+Disallow: /login
+Disallow: /merch
+Disallow: /sponsors-embed
+Disallow: /learn
+Disallow: /support
+Disallow: /dedicated-support
