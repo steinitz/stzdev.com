@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, Outlet, useLocation } from '@tanstack/react-router'
+import { Link, Outlet } from '@tanstack/react-router'
 import { CgClose, CgMenuLeft, CgMusicSpeaker } from 'react-icons/cg'
 import { MdLibraryBooks, MdLineAxis, MdSupport, MdEmail } from 'react-icons/md'
 import { twMerge } from 'tailwind-merge'
@@ -12,42 +12,25 @@ import {
   FaTshirt,
   FaUsers,
 } from 'react-icons/fa'
-import { getSponsorsForSponsorPack } from '~/server/sponsors'
-import { libraries } from '~/libraries'
-import { Scarf } from '~/components/Scarf'
 import { ThemeToggle, useThemeStore } from '~/components/ThemeToggle'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { BiSolidCheckShield } from 'react-icons/bi'
-import { SearchButton } from '~/components/SearchButton'
 
 export const Route = createFileRoute({
   staleTime: Infinity,
-  loader: async (ctx) => {
-    return {
-      sponsorsPromise: getSponsorsForSponsorPack(),
-    }
-  },
   component: LibrariesLayout,
 })
 
 function LibrariesLayout() {
-  const activeLibrary = useLocation({
-    select: (location) => {
-      return libraries.find((library) => {
-        return location.pathname.startsWith(library.to!)
-      })
-    },
-  })
-
   const detailsRef = React.useRef<HTMLElement>(null!)
   const linkClasses = `flex items-center justify-between group px-2 py-1 rounded-lg hover:bg-gray-500 hover:bg-opacity-10 font-black`
 
   // Preferred Tools section
   const preferredTools = [
     { label: 'React', colorClass: '' },
-    { label: 'TanStack Start', to: '/start', external: false }, // where does it get the colored title, TanStack Start?
-    { label: 'TanStack Router', to: '/router', external: false },
-    { label: 'TanStack Query', to: '/query', external: false },
+    { label: 'TanStack Start', to: 'https://tanstack.com/start', external: true, colorClass: 'text-cyan-500' },
+    { label: 'TanStack Router', to: 'https://tanstack.com/router', external: true, colorClass: 'text-emerald-500 dark:text-emerald-400' },
+    { label: 'TanStack Query', to: 'https://tanstack.com/query', external: true, colorClass: 'text-red-500' },
     { label: 'Authentication' },
     { label: 'Better Auth', to: 'https://www.better-auth.com', external: true, colorClass: 'text-orange-500 dark:text-orange-400' },
   ]
@@ -87,64 +70,17 @@ function LibrariesLayout() {
               </a>
             )
           } else {
-            // Find matching library for internal links
-            const matchingLibrary = libraries.find(lib => lib.to === tool.to)
-            if (matchingLibrary) {
-              const [prefix, name] = matchingLibrary.name.split(' ')
-              return (
-                <Link
-                  key={i}
-                  to={tool.to}
-                  onClick={() => {
-                    detailsRef.current.removeAttribute('open')
-                  }}
-                >
-                  {(props) => {
-                    return (
-                      <div
-                        className={twMerge(
-                          linkClasses,
-                          'font-normal',
-                          'm-2',
-                          props.isActive
-                            ? 'bg-gray-500/10 dark:bg-gray-500/30 font-bold'
-                            : ''
-                        )}
-                      >
-                        <span>
-                          <span className="font-light dark:font-bold dark:opacity-40">
-                            {prefix}
-                          </span>{' '}
-                          <span className={matchingLibrary.textStyle}>{name}</span>
-                        </span>
-                        {matchingLibrary.badge ? (
-                          <span
-                            className={twMerge(
-                              `px-2 py-px font-black bg-gray-500/10 dark:bg-gray-500/20 rounded-full text-[.7rem] group-hover:opacity-100 transition-opacity text-white animate-pulse`,
-                              matchingLibrary.textStyle
-                            )}
-                          >
-                            {matchingLibrary.badge}
-                          </span>
-                        ) : null}
-                      </div>
-                    )
-                  }}
-                </Link>
-              )
-            } else {
-              return (
-                <Link
-                  key={i}
-                  to={tool.to}
-                  className={twMerge(linkClasses, 'font-normal')}
-                >
-                  <div className="flex items-center gap-2">
-                    <div>{tool.label}</div>
-                  </div>
-                </Link>
-              )
-            }
+            return (
+              <Link
+                key={i}
+                to={tool.to}
+                className={twMerge(linkClasses, 'font-normal')}
+              >
+                <div className="flex items-center gap-2">
+                  <div>{tool.label}</div>
+                </div>
+              </Link>
+            )
           }
         })}
       </div>
@@ -244,9 +180,6 @@ function LibrariesLayout() {
           className="flex flex-col gap-4 whitespace-nowrap h-[0vh] overflow-y-auto
           border-t border-gray-500 border-opacity-20 text-lg bg-white/80 dark:bg-black/20"
         >
-          <div className="p-2 pb-0">
-            <SearchButton />
-          </div>
           <div className="space-y-px text-sm p-2">
             {items}
           </div>
@@ -260,9 +193,6 @@ function LibrariesLayout() {
       <div className="min-w-[250px] hidden lg:flex flex-col h-screen sticky top-0 z-20 bg-white/50 dark:bg-black/30 shadow-xl dark:border-r border-gray-500/20">
         <div className="p-4 flex gap-2 items-center text-2xl border-b border-gray-500/10 dark:border-gray-500/20">
           {logo}
-        </div>
-        <div className="p-2">
-          <SearchButton />
         </div>
         <div className="flex-1 flex flex-col gap-4 whitespace-nowrap overflow-y-auto text-base pb-[50px]">
           <div className="space-y-1 text-sm p-2">
@@ -282,7 +212,6 @@ function LibrariesLayout() {
       <div className="flex flex-1 min-h-0 relative justify-center overflow-x-hidden">
         <Outlet />
       </div>
-      {activeLibrary && 'scarfId' in activeLibrary && activeLibrary.scarfId ? <Scarf id={activeLibrary.scarfId} /> : null}
     </div>
   )
 }

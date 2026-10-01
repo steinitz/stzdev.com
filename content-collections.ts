@@ -1,5 +1,5 @@
 import { defineCollection, defineConfig } from '@content-collections/core'
-import { extractFrontMatter } from '~/utils/documents.server'
+import { extractFrontMatter } from '~/utils/frontMatter'
 
 const posts = defineCollection({
   name: 'posts',

@@ -15,15 +15,11 @@ import appCss from '~/styles/app.css?url'
 import carbonStyles from '~/styles/carbon.css?url'
 import { seo } from '~/utils/seo'
 import ogImage from '~/images/og.png'
-import { TanStackRouterDevtoolsInProd } from '@tanstack/react-router-devtools'
 import { NotFound } from '~/components/NotFound'
 import { CgSpinner } from 'react-icons/cg'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { getThemeCookie, useThemeStore } from '~/components/ThemeToggle'
-import { GoogleScripts } from '~/components/GoogleScripts'
 import { BackgroundAnimation } from '~/components/BackgroundAnimation'
-import { SearchProvider } from '~/contexts/SearchContext'
-import { SearchModal } from '~/components/SearchModal'
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient
@@ -45,10 +41,6 @@ export const Route = createRootRouteWithContext<{
         keywords:
           'stzdev,web development,react,modern web,software development,javascript,typescript'
       }),
-      {
-        name: 'google-adsense-account',
-        content: 'ca-pub-9403278435468733',
-      },
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
@@ -132,11 +124,9 @@ export const Route = createRootRouteWithContext<{
 
 function RootComponent() {
   return (
-    <SearchProvider>
-      <RootDocument>
-        <Outlet />
-      </RootDocument>
-    </SearchProvider>
+    <RootDocument>
+      <Outlet />
+    </RootDocument>
   )
 }
 
@@ -170,12 +160,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
-  const isRouterPage = useRouterState({
-    select: (s) => s.resolvedLocation?.pathname.startsWith('/router'),
-  })
-
-  const showDevtools = canShowLoading && isRouterPage
-
   const [themeClass, setThemeClass] = React.useState('')
 
   React.useEffect(() => {
@@ -197,14 +181,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         {matches.find((d) => d.staticData?.baseParent) ? (
           <base target="_parent" />
         ) : null}
-        <GoogleScripts />
       </head>
       <body>
         <BackgroundAnimation />
         <React.Suspense fallback={null}>{children}</React.Suspense>
-        {showDevtools ? (
-          <TanStackRouterDevtoolsInProd position="bottom-right" />
-        ) : null}
         {canShowLoading ? (
           <div
             className={`fixed top-0 left-0 h-[300px] w-full
@@ -226,7 +206,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         ) : null}
-        <SearchModal />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5N57KQT4"
